@@ -1,0 +1,47 @@
+/* Formulário */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto; /* Centraliza verticalmente */
+    padding: 20px;
+    background-color: var(--cor-neutro); /* Tom neutro */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Cor do texto */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--cor-primaria); /* Verde */
+    color: #fff; /* Cor do texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona transição suave */
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049; /* Verde mais escuro ao passar o mouse */
+}

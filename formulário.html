@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formulario1.css">
+</head>
+
+<body>
+    <form class="form-container" action="pagina_formulario.html" method="post">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+    
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+    <form action="processa_formulario.php" method="post">
+        <!-- Seus campos de formulário aqui -->
+    </form>
+    
+</body>
+
+</html>

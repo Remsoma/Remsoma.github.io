@@ -1,3 +1,435 @@
-body {
-    background-color: rgb(214, 199, 199);
+body { /*antes aqui era * */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
 }
+
+:root {
+    /* Definição de variáveis de cor */
+    --cor-primaria: #2e7d32; /* Verde */
+    --cor-fundo: rgb(221, 217, 217); /* Branco */
+    --cor-hover: #c5e1a5; /* Verde claro para hover */
+    --cor-neutro: #f2f2f2; /* Tom neutro */
+    /* Definição de variável de fonte */
+    --fonte-principal: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+menu {
+    background-color: var(--cor-primaria);
+    padding: 20px 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 160px;
+}
+
+.logo img {
+width: 140px;
+margin-left:25px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+nav ul li {
+    margin-right: 20px;
+
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: var(--cor-hover);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Reduz o espaçamento interno do link */
+    transition: color 0.3s;
+    display: block; /* Transforma o link em um bloco para melhor espaçamento */
+
+}
+
+nav ul li a:hover {
+    color: #89ff03;
+}
+
+
+
+
+
+
+
+
+
+
+.menu-btn button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px; /* Reduz o espaçamento interno do botão */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:100px;
+}
+
+.menu-btn button:hover {
+    background-color: #45a049;
+}
+
+.main {
+    padding: 40px;
+}
+
+.hero {
+    background-image: url('assets/1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding-right: 20%;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quadradinho {
+    width: 200px;
+    height: 200px;
+    background-color: var(--cor-verde-suave);
+    margin: 30px;
+    display: inline-block;
+    border-radius: 25%;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transform */
+}
+
+.quadradinho:hover {
+    transform: scale(1.1); /* Aumenta a escala do quadrado quando o mouse passa sobre ele */
+}
+
+.quadradinho-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.quadradinho img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quadradinho p {
+    margin-top: 20px; 
+    font-size: 1.6rem;
+    line-height: 26px;
+    max-width: 70%;
+    text-align: center;
+}
+
+span {
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+.desafios-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%; /* Adiciona uma margem superior para separar dos quadradinhos */
+}
+
+.desafio {
+    background-color: var(--cor-neutro); /* Altera para tom neutro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.desafio h2 {
+    color: #333; /* Cor do título */
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior do título */
+}
+
+.desafio p {
+    color: #666; /* Cor do texto */
+    font-size: 1.6rem; /* Tamanho da fonte do texto */
+    margin-bottom: 20px; /* Espaçamento inferior do texto */
+}
+
+.desafio button {
+    background-color: #4caf50; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Borda arredondada do botão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+.desafio button:hover {
+    background-color: #45a049; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+}
+
+.dicas-sustentabilidade {
+    background-image:url(assets/Design\ sem\ nome\ \(1\).png) ;
+    margin-top: 5%;
+    background-color: var(--cor-fundo); /* Altera para tom neutro */
+    padding: 40px 0;
+    
+}
+
+.dicas-sustentabilidade h2 {
+    margin-right: 20px;
+    color: #333; 
+    font-size: 2.2rem; /* Tamanho da fonte */
+    text-transform: uppercase; 
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+
+.dicas-sustentabilidade .dicas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.dica {
+    margin-bottom: 40px;
+}
+
+
+
+.dica h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.dica p {
+    font-size: 1.6rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.calculator {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+        footer {
+            background-color: #2a492e;
+            color: #fff;
+            padding-top: 20px; /*ver se fica melhor com zero ou vinte */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container-footer {
+            display: flex;
+            justify-content: space-between;
+            max-width: 96vw;
+            margin: 0 auto;
+        }
+
+
+        .img-footer {width: 100%;
+            max-height: 100%; /* Evita que a imagem estique além da altura da coluna */
+    }
+
+        .img-share-footer-container{display: flex; /* Define o container como um flex container */
+        }
+        .img-share-footer{
+            margin-right: 10px; /* Adiciona uma margem entre as imagens */
+            width: 10%;
+            max-height: 100%;
+            transition: opacity 0.3s ease; /* Adiciona uma transição suave */
+        }
+        .img-share-footer:hover {
+            opacity: 0.5; /* Diminui a opacidade quando o mouse passa por cima */
+          }
+
+        /* Estilos para as colunas do footer*/
+        .coluna-logo {
+            flex-basis: 20%;
+            margin-left: 1vw;
+            align-items: center;
+            
+        }
+        .coluna-contato {
+            flex-basis: 35%;
+            margin-left: 8vw;
+        }
+        .coluna-paginas {
+            flex-basis: 40%;
+            margin-left: 8vw;
+        }
+
+    
+
+
+        /* Estilos para o conteúdo dentro das colunas */
+        .coluna-paginas a {
+            margin-bottom: 10px;
+            color: white; /* Define a cor do texto como branca */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+        .coluna-paginas a:hover {
+            text-decoration: underline; /* Adiciona sublinhado quando o mouse passa por cima */
+            color: white; /* Mantém a cor do texto do link como branco */}
+
+        .coluna-paginas ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .coluna-paginas ul li {
+            margin-bottom: 5px;
+            list-style-type: none; /* Remove os marcadores padrão de lista */
+
+        }
+        .coluna-paginas li:before {
+            content: ">"; /* Define o conteúdo antes de cada item da lista como ">" */
+            margin-right: 5px; /* Adiciona um espaço entre a seta e o texto */}
+        /* Estilos gerais CONTAINER CONTATO*/
+
+    .container-contato {
+        max-width: 600px;
+        max-height: 600px; /*mexer no max do container, mas tem que mexer no tamanho do imput */
+        margin: 20 px auto 50px;
+        background-color: #477c52;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+   
+
+    /* Formulário do Footer */
+    .input-footer {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+    textarea {
+        height: 70px;
+    }
+
+    .botao-footer {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .botao-footer:hover {
+        background-color: #45a049; /*cor hover botao*/
+
+    }
+    .share-text-footer {color: #5e7a61;}
+    .hr-footer{  border-color: rgb(93, 121, 96);
+    }
+    .copyright-footer {
+        background-color: #1c311f; /* Cor de fundo da caixa de direitos autorais */
+        padding: 10px; /* Espaçamento interno */
+        text-align: center; /* Alinhamento de texto centralizado */}

@@ -1,71 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remasoca</title>
+    <title>Remsoma</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+
 </head>
+
 <body>
 
     <menu>
-        <img src="assets/logo.jpeg" alt="">
         <nav>
+<div class="logo">
+<a href="index.html"><img src="assets/nome-com-logo.png" alt="Logo Remsoma"></a>
+
+</div>   <a id="inicio"></a>
+
+
             <ul>
-                <li><a href="#">Agricultura</a></li>
-                <li><a href="#">Energia Solar</a></li>
-                <li><a href="#">Calculadora</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Mais</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="html pages/sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="html pages/blog.html">Blog</a></li>
+                <li><a href="html pages/canal-de-denuncia.html">Como Ajudar</a></li>
+                <!--<ul class="dropdown-content">           
+                   <li><a href="#">Canal de Denúncia</a></li>
+                    <li><a href="#">Campanhas</a></li>
+                    <li><a href="#">Doações</a></li>
+                </ul>-->
+                <li><a href="#contato">Contato</a></li>
+                <li class="menu-btn"><a href="formulário.html"><button>Inscreva-se</button></a></li>
+
             </ul>
         </nav>
     </menu>
 
-<main>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Cansado de ver o nosso planeta sufocar sob o peso da poluição? Nós também!</h1>
+            </div>
+        </section>
+    </main>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="assets/Design sem nome.png" alt="Imagem de pessoas">
+        </div>
+        <div class="text-container">
+
+<h1>Remsoma</h1>
+
+        <span>
+            Bem-vindo ao Remsoma, dedicado à luta contra a poluição. Somos uma equipe apaixonada por proteger o
+                meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam nosso planeta. Nosso objetivo
+                é oferecer recursos informativos e inspiradores para capacitar indivíduos a reduzir sua pegada ecológica e
+                promover mudanças positivas. Junte-se a nós nesta jornada para um mundo mais limpo e saudável.
+        </span>
+        </div>
+    </div>
+
+
+    <div class="quadradinho-container">
+        <div class="quadradinho">
+            <img src="quadrados/1.png" alt="Imagem 1">
+            <p>Reduza o uso de plástico descartável.</p>
+        </div>
+        <div class="quadradinho">
+            <img src="quadrados/2.png" alt="Imagem 2">
+            <p>Economize energia em casa.</p>
+        </div>
+        <div class="quadradinho">
+            <img src="quadrados/3.png" alt="Imagem 3">
+            <p>Recicle e reutilize materiais sempre que possível.</p>
+        </div>
+        <div class="quadradinho">
+            <img src="quadrados/4.png" alt="Imagem 4">
+            <p>Participe de campanhas de limpeza da comunidade.</p>
+        </div>
+    </div>
     
-    <h1>Ajudando a Proteger o ambiente com tecnologia </h1>
+    <div class="desafios-container">
+        <div class="desafio">
+            <h2>Desafio 1: Redução do Uso de Plástico</h2>
+            <p>O uso excessivo de plástico tem causado danos significativos aos oceanos e à vida marinha. Precisamos encontrar alternativas e incentivar práticas mais sustentáveis.</p>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="desafio">
+            <h2>Desafio 2: Conservação da Biodiversidade</h2>
+            <p>A perda de habitats naturais e a extinção de espécies são ameaças urgentes que exigem ações imediatas para proteger e restaurar a biodiversidade em todo o mundo.</p>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="desafio">
+            <h2>Desafio 3: Mitigação das Mudanças Climáticas</h2>
+            <p>O aumento das temperaturas globais está causando impactos devastadores, incluindo eventos climáticos extremos e a acidificação dos oceanos. Devemos reduzir as emissões de gases de efeito estufa e adotar práticas de adaptação.</p>
+            <button>Saiba Mais</button>
+        </div>
+    </div>
+    
+    <section class="dicas-sustentabilidade">
 
-</main>
+        <div class="container">
+            <h2>Dicas de Sustentabilidade</h2>
+            <div class="dica">
+                <h3>Dica 1: Reduza o Uso de Plástico</h3>
+                <p>Use sacolas reutilizáveis, garrafas de água recarregáveis e evite produtos embalados em plástico sempre que possível.</p>
+            </div>
+            <div class="dica">
+                <h3>Dica 2: Economize Energia</h3>
+                <p>Desligue os aparelhos eletrônicos quando não estiverem em uso, troque lâmpadas incandescentes por LED e aproveite a luz natural sempre que possível.</p>
+            </div>
+            
+        </div>
+    </section>
+    
 
-<section class="container"> <!--Painel em tempo real -->
-    <p>Atualizado em tempo real</p>
-    <hr class="Linha">
-<h2>Habitantes na terra:</h2>
-<p>12,33 milhões</p>
+    <div class="calculator">
+        <h2>Calculadora de Pegada Ecológica</h2>
+        <form id="ecoForm">
+            <div class="form-group">
+                <label for="housing">Moradia:</label>
+                <select id="housing">
+                    <option value="0">Selecione</option>
+                    <option value="1">Casa</option>
+                    <option value="2">Apartamento</option>
+                    <option value="3">Kitnet/Quitinete</option>
+                </select>
+            </div>
 
-<h2>animais Em risco de extinção</h2>
-<p>5000</p>
+            <div class="form-group">
+                <label for="transport">Transporte (km/semana):</label>
+                <input type="number" id="transport" min="0">
+            </div>
 
-<span>São Paulo</span>
-<h2>Qualidade do ar</h2>
+            <div class="form-group">
+                <label for="food">Alimentação (kg de CO2/mês):</label>
+                <input type="number" id="food" min="0">
+            </div>
 
-<h2>Queimadas no brasil</h2>
-<p>22.00</p>
+            <div class="form-group">
+                <label for="consumption">Consumo (R$/mês):</label>
+                <input type="number" id="consumption" min="0">
+            </div>
 
-<span>São Paulo</span>
-<h2>Chance de chuva</h2>
-<p>BAIXO</p>
-</section>
+            <button type="submit">Calcular</button>
+            </form></div>
 
-<section>
-    <h1>Principais Noticias</h1>
-    <h2>Noticia 1</h2>
-    <p>Ajudamos A empresa,Pessoas E Micro Agricultores Com Dados Em tempo real E para 
-        Ajudar Seus Negocios prosperarem,Tentamos Ao Maximo Trazer Informação Para  que qualquer um possa ler</p>
-        <p>Saiba Mais</p>
+        <footer>   
 
-        <h2>Noticia 2</h2>
-        <p>Ajudamos A empresa, pessoas  e micro Agricultores com dados em tempo real e para ajudar seus negocios prosperarem, Tentamos ao maximo trazer informação para  que qualquer um possa ler</p>
-</section>
+            <div class="container-footer"> 
+                <div class="coluna-logo">
+                    <img src="assets/nome-com-logo.png" class="img-footer" alt="Remsoma"/>
+                    <p>Somos uma equipe apaixonada por proteger o meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam São Paulo.</p>
+                    <hr class="hr-footer">
+                    <p class="share-text-footer">Compartilhe o nosso projeto</p>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Remsoma&title=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la." target="_blank"><img src="assets/linkedin-logo-footer.png" class="img-share-footer"></a>
+                    <a href="https://twitter.com/intent/tweet?text=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la.&url=https://github.com/Remsoma" target="_blank"><img src="assets/x-logo-footer.png" class="img-share-footer"></a>
+                    <a href="https://github.com/Remsoma" target="_blank"><img src="assets/github-logo-footer.png" class="img-share-footer"></a>
 
+                </div>
+                <div class="coluna-paginas" >
+                    <h3><a href="index.html">A Remsoma</a></h3>
+                    <hr class="hr-footer">
 
+                    <h3>Entenda nossos objetivos</h3>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Impacto da Poluição</a></li>
 
+                    </ul>
+                    <hr class="hr-footer">
+                    <h3>Como nos ajudar</h3>
+                    <ul>
+                        <li><a href="#">Canal de Denúncia</a></li>
+                        <li><a href="#">Campanhas</a></li>
+                        <li><a href="#">Doações</a></li>
+                    </ul>
+                    <hr class="hr-footer">
+                    <h3>Atente-se às novidades e informações</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Inscreva-se</a></li>
+                    </ul>
+                    <hr class="hr-footer">
 
+        
 
+                </div>
+                <div class="coluna-contato">
+                    <div class="container-contato">
+                        <h2>Entre em Contato</h2>
+                        <form  action="#" method="post">
+                            <label for="nome">Nome:</label>
+                            <input class="input-footer" type="text" id="nome" name="nome" required>
+                    
+                            <label for="email">E-mail:</label>
+                            <input class="input-footer" type="email" id="email" name="email" required>
+                    
+                            <label for="assunto">Assunto:</label>
+                            <select class="input-footer" id="assunto" name="assunto" required>
+                                <option value="" disabled selected hidden>Selecione uma opção</option>
+                                <option value="doação">Doação</option>
+                                <option value="vendas">Vendas</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="voluntariado">Voluntariado</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                    
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea class="input-footer" id="mensagem"  name="mensagem" required></textarea>
+                    
+                            <input class="botao-footer" type="submit" value="Enviar">
+                        </form>  <a id="contato"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-footer">
+                <p>Todos os direitos reservados &copy; 2024 Remsoma</p>
+            </div>
 
+        </footer>
 
+        <div id="result"></div>
+    </div>
 
-
-
+    <script src="script.js"></script>
+    
+    <!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scroll-suave.js"></script>
+</body>
 
 </html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Remsoma</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/icon.png" type="image/png">
+    <style> 
+
+
+.box-blog{
+        align-items: center;
+        margin: 10vw;
+    }
+
+    /* Estilos para a caixa do post */
+    .post-box {
+        background-color: #ffffff; /* Cor de fundo da caixa */
+        border-radius: 20px; /* Borda curva */
+        border: 2px solid #cccccc; /* Cor da borda */
+        padding: 20px; /* Espaçamento interno */
+        margin-bottom: 20px; /* Espaçamento externo */
+        overflow: hidden; /* Para evitar que conteúdo transborde */
+    }
+
+    /* Estilos para a imagem */
+    .post-image {
+        width: 15%; /* Aumenta o tamanho da imagem para 180% */
+        height: auto; /* Mantém a proporção da imagem */
+        float: left; /* Alinha a imagem à esquerda */
+        margin-right: 20px; /* Espaçamento entre imagem e texto */
+        border-radius: 20px; /* Borda curva para a imagem */
+    }
+
+    /* Estilos para o título */
+    .post-title {
+        font-size: 1.5em; /* Tamanho da fonte */
+        margin-top: 0; /* Remove margem superior padrão */
+        margin-bottom: 10px; /* Espaçamento abaixo do título */
+    }
+
+    /* Estilos para a descrição */
+    .post-description {
+        font-size: 1em; /* Tamanho da fonte */
+        color: rgb(116, 155, 116); /* Cor do texto da descrição */
+    }
+
+    .post-box li {
+        margin-left: 140px; /* Margem à esquerda para criar espaço para a imagem */
+        list-style-type: none; /* Remove os marcadores padrão de lista */
+        color: gray; /* Cor do texto da descrição */
+
+    }
+
+    .post-box li:before {
+        content: "●"; /* Define o conteúdo antes de cada item da lista como ">" */
+        margin-right: 5px; /* Adiciona um espaço entre a seta e o texto */
+        color: rgb(116, 155, 116);
+    }
+
+    .texto-box-post h2 {
+    color: black;
+}
+.post-navigation {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .post-navigation a {
+        background-color: white;
+        display: inline-block;
+        padding: 11px 10px;
+        margin: 0 5px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #000;
+    }
+    .post-navigation span {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0 5px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #000;
+        background-color: white;
+
+    }
+    .box-blog a {
+            margin-bottom: 10px;
+            text-decoration: none; /* Remove o sublinhado */
+            color: black;
+        }
+    .box-blog a:hover {
+            text-decoration: underline; /* Adiciona sublinhado quando o mouse passa por cima */
+            color: black;}
+        
+    </style>
+</head>
+<body>
+    <menu>
+        <nav>
+<div class="logo">
+<a href="../index.html"><img src="../assets/nome-com-logo.png" alt="Logo Remsoma"></a>
+</div>   
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="html pages/sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="html pages/canal-de-denuncia.html">Denúncias</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="html pages/blog.html">Blog</a></li>
+                <li class="menu-btn"><a href="formulário.html"><button>Inscreva-se</button></a></li>
+
+            </ul>
+        </nav>
+    </menu>
+
+<!-- Exemplo de um post -->
+<div class="box-blog">
+  <h2>Posts Recentes:</h2>
+
+    <div class="post-box">
+        <img src="../../assets/rio-tiete-icon.png" alt="Imagem do post" class="post-image">
+        <div class="post-content">
+            <a href="blogPosts/id=1.html"><h2 class="post-title">Entenda como a poluição de São Paulo impactou Rio Tietê</h2></a>
+            
+
+            <p class="post-description">
+                <hr>            </p>
+                <ul>
+                    <li>Como se tornou o rio mais sujo do Brasil.Como se tornou o rio mais sujo do Brasil.Como se tornou o rio mais sujo do Brasil.Como se tornou o rio mais sujo do Brasil.Como se tornou o rio mais sujo do Brasil.Como se tornou o rio mais sujo do Brasil.</li>
+                </ul>       
+                 <p class="post-description">
+                    17:03  12/05/24 </p>
+        </div>
+        
+    </div>
+    <div class="post-box">
+        <img src="../assets/importancia-arvores-icon.png" alt="Imagem do post" class="post-image">
+        <div class="post-content">
+            <a href="blogPosts/id=0.html"><h2 class="post-title">Importância das árvores</h2></a>
+            <p class="post-description">
+            <hr></p>
+                <ul>
+                    <li>Como se tornou o rio mais sujo do Brasil</li>
+                </ul>
+                <p class="post-description">
+                    14:32  09/05/24 </p>
+        </div>
+        
+
+    </div>
+    <div class="post-navigation">
+        <a href="#">&lt; Anterior</a>
+        <a href="#">Próximo &gt;</a>
+        <span>1/1</span>
+    </div>
+</div>
+
+</body>
+</html>
