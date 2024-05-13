@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto da Poluição - Remsoma</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../assets/icon.png" type="image/png">
+    <style> 
+    
+    h1{text-align: center;}
+    
+   .introducao hr {
+    border: none;
+    background-color: #1cb843;
+    height: 10px; /* Ajuste a altura conforme necessário */
+    border-radius: 5px; /* Isso cria as bordas curvas */
+    margin-top: 10vw;
+    width: 40%;
+  }
+
+    .introducao{background-color: white;
+        margin-bottom: 20px;
+    }
+
+    
+.caixa-introducao {
+    display: flex;
+    border-color: gray;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ccc;
+text-align: justify;
+  }
+  
+  .introducao-texto {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .introducao-imagem {
+    flex: 1;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .desafios-urbanos{
+
+  }
+  .desafios-urbanos hr {
+    border: none;
+    background-color: #1cb843;
+    height: 5px; /* Ajuste a altura conforme necessário */
+    border-radius: 5px; /* Isso cria as bordas curvas */
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 40%;
+  }
+  .box-limit{text-align: center;
+        margin: 0 20vw;
+    margin-top: 20px;}
+
+    .desafios-urbanos img {}
+
+    .icon-img {
+        margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  .subtitle-img{margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+text-decoration: none;}
+  
+  .icone {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .caixa-rio {
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(39, 89, 196);
+    color: white;
+    bottom: 0;
+    transform: skewY(-4deg); /* Inclinação diagonal */
+    transform-origin: 0 100%; /* Define o ponto de origem da transformação */
+    position: relative;
+  }
+  
+  .texto-rio {
+    flex: 1;
+    padding: 50px;
+    transform: skewY(4deg); /* Inclinação diagonal */
+  }
+  
+  .img-rio {
+    flex: 1;
+    width: 50%;
+    height: 50%;
+  }
+
+  .caixa-terra {
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(87, 48, 43);
+    color: white;
+    bottom: 0;
+    transform: skewY(4deg); /* Inclinação diagonal */
+    transform-origin: 0 100%; /* Define o ponto de origem da transformação */
+    position: relative;
+
+    
+  }
+  
+  .texto-terra {
+    flex: 1;
+    padding: 50px;
+    transform: skewY(-4deg); /* Inclinação diagonal */
+  }
+  
+  .img-terra {
+    flex: 1;
+    width: 50%;
+    height: 50%;
+  }
+
+  .caixa-ar {
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(167, 172, 159);
+    color: black;
+    bottom: 0;
+    transform: skewY(4deg); /* Inclinação diagonal */
+    transform-origin: 0 100%; /* Define o ponto de origem da transformação */
+    position: relative;
+
+    
+  }
+  
+  .texto-ar {
+    flex: 1;
+    padding: 50px;
+    transform: skewY(-4deg); /* Inclinação diagonal */
+  }
+  
+  .img-ar {
+    flex: 1;
+    width: 50%;
+    height: 50%;
+  }
+
+
+.exemplos{background-color: white;
+        padding: 1%;
+        
+        }
+.exemplos-texto{ text-align: center;
+    
+    margin-top: 2vh;
+
+        }
+        .impacto {
+            display: flex; /* Isso faz com que os elementos dentro do container sejam exibidos em linha */
+        }
+
+        .texto-impacto {
+            flex: 1; /* Isso faz com que o elemento ocupe o espaço disponível */
+            padding: 20px;
+            background-color: #f0f0f0;
+            text-align: justify;
+        }
+
+        .campo-calculadora {
+            flex: 1; /* Isso faz com que o elemento ocupe o espaço disponível */
+            padding: 2%;
+            background-color: #e0e0e0;
+            
+        }
+        .calculator {color: white;
+            background-color: #589e5e;
+    max-width: 40vw;
+    padding: 20px;
+    border: px solid #24772b;
+    border-radius: 20px;
+}
+.calculator h1 {text-align: center;}
+.calculator input{width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;}
+
+    .calculator select{width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;}
+
+.calculator button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2f6b31;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: #1f4620;
+}
+
+.calculator #result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+footer{margin-top: 20px;}
+
+
+
+</style>
+
+</head>
+<body>
+    <menu>
+        <nav>
+<div class="logo">
+<a href="../index.html"><img src="../assets/nome-com-logo.png" alt="Logo Remsoma"></a>
+
+</div>   <a id="inicio"></a>
+
+
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="canal-de-denuncia.html">Como Ajudar</a></li>
+                <!--<ul class="dropdown-content">           
+                   <li><a href="#">Canal de Denúncia</a></li>
+                    <li><a href="#">Campanhas</a></li>
+                    <li><a href="#">Doações</a></li>
+                </ul>-->
+                <li><a href="#contato">Contato</a></li>
+                <li class="menu-btn"><a href="formulário.html"><button>Inscreva-se</button></a></li>
+
+            </ul>
+        </nav>
+    </menu>
+<div class="introducao"> ds
+    <hr>
+<h1>Entenda sobre o impacto da poluição em São Paulo</h2>
+    <div class="caixa-introducao">
+        <div class="introducao-texto">
+          <h2>Introdução</h2>
+          <p>Em nosso dia a dia, somos constantemente confrontados com a realidade da poluição e seus efeitos impactantes em nosso meio ambiente e na saúde humana. É crucial entendermos as complexidades desse desafio global e as causas subjacentes que o alimentam.
+        </p>      
+              <p>No entanto, a poluição não é apenas um problema ambiental. Ela também tem ramificações socioeconômicas, afetando desproporcionalmente comunidades vulneráveis e exacerbando as desigualdades existentes. Além disso, a poluição contribui para a crise climática global, aumentando as concentrações de gases de efeito estufa na atmosfera e acelerando o aquecimento do planeta.
+            </p>
+              <p>Confrontados com esses desafios complexos, é fundamental que tomemos medidas urgentes para combater a poluição em todas as suas formas. Ao adotarmos práticas sustentáveis em nossas vidas diárias e apoiarmos políticas e iniciativas ambientais, podemos desempenhar um papel significativo na proteção do nosso planeta e na construção de um futuro mais limpo e resiliente para todos.
+            </p>
+
+
+        </div>
+        <div class="introducao-imagem">
+          <img src="../assets/impacto-poluicao-introducao.jpg" alt="Imagem São Paulo">
+        </div>
+      </div>
+</div>
+<div class="desafios-urbanos">
+<h1>Desafios Urbanos</h2>
+    <hr>
+    <p class="box-limit"> Em áreas urbanas como São Paulo, a poluição apresenta desafios únicos devido à densidade populacional e à concentração de atividades industriais e veiculares. Isso pode resultar em altos níveis de poluentes no ar, como dióxido de carbono, óxidos de nitrogênio e partículas em suspensão, afetando diretamente a qualidade de vida dos habitantes da cidade.
+    </p>
+    <p class="box-limit">O crescimento populacional rápido e frequente, tanto como a urbanização desordenada podem sobrecarregar a infraestrutura existente, resultando em problemas ambientais, como a poluição do ar e da água, o aumento da impermeabilização do solo, e a degradação dos ecossistemas naturais. A falta de planejamento urbano adequado pode dificultar a gestão eficaz dos recursos naturais e a mitigação dos impactos ambientais negativos.
+    </p>
+    <p class="box-limit">As atividades industriais e comerciais também desempenham um papel significativo na poluição urbana. A queima de combustíveis fósseis em processos industriais, a geração de resíduos químicos, e o descarte inadequado de poluentes são fontes importantes de contaminação do ar, da água, e do solo nas áreas urbanas.
+    </p>
+    <p class="box-limit">As causas da poluição urbana são diversas e interconectadas, refletindo a complexidade dos ambientes urbanos modernos. A Remsoma objetiva reduzir a poluição:
+        
+    </p>
+<div class="box-limit">
+    <div class="icon-img">
+        <a href="#terra">
+          <img class="icone" src="../assets/solo.png">
+          <p class="subtitle-img">do solo</p>
+        </a>
+        <a href="#ar">
+          <img class="icone" src="../assets/nuvem.png" alt="Ícone 2">
+          <p class="subtitle-img">do ar</p>
+
+        </a>
+        <a href="#rio">
+          <img class="icone" src="../assets/rio (1).png" alt="Ícone 3">
+          <p class="subtitle-img">dos rios</p>
+
+        </a></div>
+      </div>
+</div>
+<div class="exemplos">
+<h1 class="exemplos-texto">Exemplos de poluição em São Paulo</h1>
+<div class="caixa-terra">
+    <div class="texto-terra"> <a id="terra"></a>
+      <h2>Poluição no solo</h2>
+      <p>O aumento do consumo e o descarte inadequado de resíduos sólidos são fontes significativas de poluição urbana. A produção excessiva de resíduos, juntamente com a falta de infraestrutura adequada para sua coleta, tratamento, e disposição final, pode resultar na acumulação de lixo nas ruas, aterros sanitários sobrecarregados, e a contaminação do meio ambiente.
+    </p>
+    </div>
+    <div class="img-terra">
+      <img src="../assets/impacto-poluicao-solo.jpg" alt="Imagem São Paulo">
+    </div>
+  </div>
+  <div class="caixa-ar">
+    <div class="texto-ar"> <a id="ar"></a>
+      <h2>Poluição do Ar</h2>
+      <p>O crescente número de veículos automotores nas cidades é uma das principais fontes de poluição do ar urbano. A queima de combustíveis fósseis em motores de combustão interna libera uma variedade de poluentes atmosféricos, contribuindo para a formação de smog e a degradação da qualidade do ar.
+      </p>
+    </div>
+    <div class="img-ar">
+      <img src="../assets/impacto-poluicao-ar.jpg" alt="Imagem São Paulo">
+    </div>
+  </div>
+<div class="caixa-rio">
+    <div class="texto-rio"> <a id="rio"></a>
+      <h2>Poluição de Águas</h2>
+      <p>Os rios que serpenteiam pela cidade de São Paulo enfrentam uma ameaça crescente: o descarte incorreto de lixo. Em meio ao rápido desenvolvimento urbano, o descarte inadequado de resíduos sólidos tornou-se uma prática comum, resultando na contaminação generalizada dos cursos d'água. Sacolas plásticas, garrafas, embalagens descartáveis e uma miríade de outros resíduos são despejados impiedosamente nas margens dos rios e em seus leitos, criando um cenário desolador de poluição. Esse lixo, muitas vezes negligenciado, não apenas prejudica a beleza natural dos rios, mas também representa uma ameaça direta à vida aquática e à saúde humana. A poluição causada pelo descarte incorreto de lixo é um lembrete urgente da necessidade de práticas de consumo e descarte mais responsáveis. </p>
+    </div>
+    <div class="img-rio">
+      <img src="../assets/impacto-poluicao-rio.jpg" alt="Imagem São Paulo">
+    </div>
+</div>
+<div class="impacto">
+    <div class="texto-impacto">
+        <h1>Entenda o Impacto</h1>
+        <p>Além dos danos imediatos à saúde e ao meio ambiente, a poluição também tem implicações de longo prazo que podem ser devastadoras. A degradação contínua do meio ambiente pode levar à perda irreversível de biodiversidade, desertificação e alterações climáticas catastróficas, comprometendo o equilíbrio ecológico do nosso planeta.
+        </p>
+        <p>Nesse contexto, é fundamental compreender o conceito de pegada ecológica individual. A pegada ecológica é uma medida da quantidade de recursos naturais que uma pessoa consome e da quantidade de resíduos que ela produz ao longo de sua vida. Ela abrange não apenas o consumo de energia e água, mas também o consumo de alimentos, a mobilidade, e o descarte de resíduos. Ao calcularmos nossa pegada ecológica individual, podemos entender melhor nosso impacto no meio ambiente e identificar áreas onde podemos reduzir nosso consumo e adotar práticas mais sustentáveis.
+        </p>
+        <p>Diante desse cenário preocupante, é imperativo que tomemos medidas decisivas e urgentes para enfrentar o desafio da poluição. Adotar práticas sustentáveis em nosso cotidiano, promover a educação ambiental e apoiar políticas que visam mitigar os efeitos da poluição são passos cruciais na construção de um futuro mais limpo, saudável e sustentável para todos.
+        </p>
+
+    </div>
+    <div class="campo-calculadora">
+        <div class="calculator">
+            <h2>Calcule o Tamanho da Sua Pegada Ecológica</h2>
+            <form id="ecoForm">
+                <div class="form-group">
+                    <label for="housing">Moradia:</label>
+                    <select id="housing">
+                        <option value="0">Selecione</option>
+                        <option value="1">Casa</option>
+                        <option value="2">Apartamento</option>
+                        <option value="3">Kitnet/Quitinete</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="transport">Transporte (km/semana):</label>
+                    <input type="number" id="transport" min="0">
+                </div>
+    
+                <div class="form-group">
+                    <label for="food">Alimentação (kg de CO2/mês):</label>
+                    <input type="number" id="food" min="0">
+                </div>
+    
+                <div class="form-group">
+                    <label for="consumption">Consumo (R$/mês):</label>
+                    <input type="number" id="consumption" min="0">
+                </div>
+    
+                <button type="submit">Calcular</button>
+                </form></div>
+    </div>
+</div>
+  </div>
+  <div class="desafios-urbanos">
+    
+        
+  <h1>Soluções e Mitigações</h1>
+  <hr>
+        <p class="box-limit"> Há uma série de soluções e mitigações que podemos implementar para combater a poluição e construir um futuro mais limpo e sustentável.
+        </p>
+        <p class="box-limit">Investir em fontes de energia limpa e renovável, como solar e eólica, pode reduzir drasticamente nossas emissões de carbono e diminuir a poluição do ar. Incentivar o uso de transporte público, bicicletas e veículos elétricos pode reduzir as emissões veiculares e melhorar a qualidade do ar em áreas urbanas. Implementar sistemas eficazes de tratamento de esgoto e resíduos sólidos pode prevenir a contaminação de rios e oceanos e reduzir a quantidade de lixo que vai parar em aterros sanitários. Promover a conscientização sobre os impactos da poluição e incentivar práticas sustentáveis pode levar a mudanças positivas de comportamento em nossas comunidades. Apoiar políticas e regulamentações ambientais rigorosas pode garantir a proteção do meio ambiente e promover práticas industriais mais limpas. Investir em pesquisa e desenvolvimento de tecnologias limpas e inovadoras pode abrir novos caminhos para enfrentar os desafios da poluição e criar soluções mais eficazes.
+        </p>
+
+        <p class="box-limit">Nesse contexto, é importante destacar a importância de iniciativas como Remsoma, que busca reduzir a poluição em São Paulo por meio de projetos e ações concretas. Acompanhar e apoiar iniciativas como Remsoma é essencial para promover a conscientização e ação coletiva em prol de um ambiente mais limpo e saudável.
+        </p>
+
+
+</div>
+    <footer>   
+
+        <div class="container-footer"> 
+            <div class="coluna-logo">
+                <img src="assets/nome-com-logo.png" class="img-footer" alt="Remsoma"/>
+                <p>Somos uma equipe apaixonada por proteger o meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam São Paulo.</p>
+                <hr class="hr-footer">
+                <p class="share-text-footer">Compartilhe o nosso projeto</p>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Remsoma&title=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la." target="_blank"><img src="assets/linkedin-logo-footer.png" class="img-share-footer"></a>
+                <a href="https://twitter.com/intent/tweet?text=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la.&url=https://github.com/Remsoma" target="_blank"><img src="assets/x-logo-footer.png" class="img-share-footer"></a>
+                <a href="https://github.com/Remsoma" target="_blank"><img src="assets/github-logo-footer.png" class="img-share-footer"></a>
+
+            </div>
+            <div class="coluna-paginas" >
+                <h3><a href="index.html">A Remsoma</a></h3>
+                <hr class="hr-footer">
+
+                <h3>Entenda nossos objetivos</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Impacto da Poluição</a></li>
+
+                </ul>
+                <hr class="hr-footer">
+                <h3>Como nos ajudar</h3>
+                <ul>
+                    <li><a href="#">Canal de Denúncia</a></li>
+                    <li><a href="#">Campanhas</a></li>
+                    <li><a href="#">Doações</a></li>
+                </ul>
+                <hr class="hr-footer">
+                <h3>Atente-se às novidades e informações</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Inscreva-se</a></li>
+                </ul>
+                <hr class="hr-footer">
+
+    
+
+            </div>
+            <div class="coluna-contato">
+                <div class="container-contato">
+                    <h2>Entre em Contato</h2>
+                    <form  action="#" method="post">
+                        <label for="nome">Nome:</label>
+                        <input class="input-footer" type="text" id="nome" name="nome" required>
+                
+                        <label for="email">E-mail:</label>
+                        <input class="input-footer" type="email" id="email" name="email" required>
+                
+                        <label for="assunto">Assunto:</label>
+                        <select class="input-footer" id="assunto" name="assunto" required>
+                            <option value="" disabled selected hidden>Selecione uma opção</option>
+                            <option value="doação">Doação</option>
+                            <option value="vendas">Vendas</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="voluntariado">Voluntariado</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="input-footer" id="mensagem"  name="mensagem" required></textarea>
+                
+                        <input class="botao-footer" type="submit" value="Enviar">
+                    </form>  <a id="contato"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-footer">
+            <p>Todos os direitos reservados &copy; 2024 Remsoma</p>
+        </div>
+
+    </footer>
+</body>
+
+
+
+

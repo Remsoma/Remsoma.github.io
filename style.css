@@ -19,7 +19,7 @@ body {
     background-color: var(--cor-fundo);
 }
 
-menu {
+/*menu {
     background-color: var(--cor-primaria);
     padding: 20px 0;
     width: 100%;
@@ -27,15 +27,37 @@ menu {
     left: 0;
     position: fixed;
     z-index: 1000;
-}
+}*/
 
+/*
 nav {
     margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:  0 160px;
+}*/
+nav {
+    
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:  0 160px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-primaria);
+        color: #fff;
+        transition: top 0.3s;
+        z-index: 1000;
+    
 }
+.hidden {
+    top: -100px; /* Esconde a barra de navegação acima do viewport */
+}
+
 
 .logo img {
 width: 140px;
@@ -269,49 +291,19 @@ span {
     line-height: 1.6;
 }
 
-.calculator {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input,
-select {
-    width: 100%;
-    padding: 8px;
-}
-
-button {
+ button {
     width: 100%;
     padding: 10px 0;
-    background-color: #4CAF50;
-    color: white;
+
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
-}
 
-#result {
-    margin-top: 20px;
-    font-weight: bold;
-}
+
+
 
 
         footer {

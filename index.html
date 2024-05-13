@@ -13,7 +13,7 @@
 <body>
 
     <menu>
-        <nav>
+        <nav id="navbar">
 <div class="logo">
 <a href="index.html"><img src="assets/nome-com-logo.png" alt="Logo Remsoma"></a>
 
@@ -21,10 +21,10 @@
 
 
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="#inicio">Início</a></li>
                 <li><a href="html pages/sobre-nos.html">Sobre Nós</a></li>
                 <li><a href="html pages/blog.html">Blog</a></li>
-                <li><a href="html pages/canal-de-denuncia.html">Como Ajudar</a></li>
+                <li><a href="html pages/como-ajudar.html">Como Ajudar</a></li>
                 <!--<ul class="dropdown-content">           
                    <li><a href="#">Canal de Denúncia</a></li>
                     <li><a href="#">Campanhas</a></li>
@@ -117,36 +117,7 @@
     </section>
     
 
-    <div class="calculator">
-        <h2>Calculadora de Pegada Ecológica</h2>
-        <form id="ecoForm">
-            <div class="form-group">
-                <label for="housing">Moradia:</label>
-                <select id="housing">
-                    <option value="0">Selecione</option>
-                    <option value="1">Casa</option>
-                    <option value="2">Apartamento</option>
-                    <option value="3">Kitnet/Quitinete</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="transport">Transporte (km/semana):</label>
-                <input type="number" id="transport" min="0">
-            </div>
-
-            <div class="form-group">
-                <label for="food">Alimentação (kg de CO2/mês):</label>
-                <input type="number" id="food" min="0">
-            </div>
-
-            <div class="form-group">
-                <label for="consumption">Consumo (R$/mês):</label>
-                <input type="number" id="consumption" min="0">
-            </div>
-
-            <button type="submit">Calcular</button>
-            </form></div>
+    
 
         <footer>   
 
@@ -231,6 +202,24 @@
     <!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scroll-suave.js"></script>
+    <!-- script para descer ou subir com o nav-->
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Descendo
+                navbar.classList.add('hidden');
+            } else {
+                // Subindo
+                navbar.classList.remove('hidden');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar o caso de rolar até o topo
+        });
+    </script>
 </body>
 
 </html>
