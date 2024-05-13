@@ -129,9 +129,9 @@ cursor: pointer;
 
             <ul>
                 <li><a href="../index.html">Início</a></li>
-                <li><a href="html pages/sobre-nos.html">Sobre Nós</a></li>
-                <li><a href="html pages/blog.html">Blog</a></li>
-                <li><a href="html pages/canal-de-denuncia.html">Como Ajudar</a></li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="como-ajudar.html">Como Ajudar</a></li>
                 <!--<ul class="dropdown-content">           
                    <li><a href="#">Canal de Denúncia</a></li>
                     <li><a href="#">Campanhas</a></li>
@@ -169,20 +169,17 @@ cursor: pointer;
         <div class="project">
             <h3>Canal de Denúncia</h3>
 
-            <img src="projeto3.jpg" alt="Projeto 3">
-      <a href="#"><button>Conheça</button></a>
+      <a href="canal-de-denuncia.html"><button>Conheça</button></a>
           </div>
           <div class="project">
             <h3>Conteúdo Informativo</h3>
 
-            <img src="projeto3.jpg" alt="Projeto 3">
-      <a href="#"><button>Conheça</button></a>
+      <a href="blog.html"><button>Conheça</button></a>
           </div>
           <div class="project">
             <h3>Divulgação de Campanhas</h3>
 
-            <img src="projeto3.jpg" alt="Projeto 3">
-      <a href="#"><button>Conheça</button></a>
+      <a href="canal-de-campanhas.html"><button>Conheça</button></a>
           </div>
       </section>
 
@@ -224,22 +221,22 @@ cursor: pointer;
 
                 <h3>Entenda nossos objetivos</h3>
                 <ul>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Impacto da Poluição</a></li>
+                    <li><a href="sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="impacto-poluicao.html">Impacto da Poluição</a></li>
 
                 </ul>
                 <hr class="hr-footer">
                 <h3>Como nos ajudar</h3>
                 <ul>
-                    <li><a href="#">Canal de Denúncia</a></li>
-                    <li><a href="#">Campanhas</a></li>
-                    <li><a href="#">Doações</a></li>
+                    <li><a href="canal-de-denuncia.html">Canal de Denúncia</a></li>
+                    <li><a href="canal-de-campanhas.html">Campanhas</a></li>
+                    <li><a href="doacoes.html">Doações</a></li>
                 </ul>
                 <hr class="hr-footer">
                 <h3>Atente-se às novidades e informações</h3>
                 <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Inscreva-se</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="../formulário.html">Inscreva-se</a></li>
                 </ul>
                 <hr class="hr-footer">
 
@@ -286,6 +283,25 @@ cursor: pointer;
 <script src="script.js"></script>
 
 <!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
+<!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../scroll-suave.js"></script>
+<!-- script para descer ou subir com o nav-->
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Descendo
+            navbar.classList.add('hidden');
+        } else {
+            // Subindo
+            navbar.classList.remove('hidden');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar o caso de rolar até o topo
+    });
+</script>
     </body>
