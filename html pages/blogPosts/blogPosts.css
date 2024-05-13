@@ -1,0 +1,40 @@
+.img-banner{width: 100%;}
+
+
+.corpo-do-post{text-align: center;
+    align-items: center;
+    margin: 2vw 10vw;
+    margin-top: 2vw;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+
+    }
+
+
+
+.corpo-do-post hr{width: 65vw;}
+
+
+.resumo {color: gray;
+text-align: justify;}
+
+.img-post{text-align: center;
+align-items: center;}
+
+.img-subtitle{color: gray;
+    text-align: left;
+}
+.img-subtitle hr{color: gray;
+    width: 10px;
+    text-align: left;
+}
+
+.box-limit{margin: 0 5vw;
+text-align: justify;}
+.horario{text-align: right;
+color: rgb(116, 155, 116)}
+
+
+
