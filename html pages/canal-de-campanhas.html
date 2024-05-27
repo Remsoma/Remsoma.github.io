@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós - Remsoma</title>
+    <title>Campanhas - Remsoma</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="../assets/icon.png" type="image/png">
 
@@ -14,57 +14,47 @@
         margin: 10vw;
     }
 
-    /* Estilos para a caixa do post */
     .post-box {
-        background-color: #ffffff; /* Cor de fundo da caixa */
-        border-radius: 20px; /* Borda curva */
-        border: 2px solid #cccccc; /* Cor da borda */
-        padding: 20px; /* Espaçamento interno */
-        margin-bottom: 20px; /* Espaçamento externo */
-        overflow: hidden; /* Para evitar que conteúdo transborde */
+        background-color: #ffffff; 
+        border-radius: 20px; 
+        border: 2px solid #cccccc; 
+        padding: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
     }
 
-    /* Estilos para a imagem */
     .post-image {
-        width: 15%; /* Aumenta o tamanho da imagem para 180% */
-        height: auto; /* Mantém a proporção da imagem */
-        float: left; /* Alinha a imagem à esquerda */
-        margin-right: 20px; /* Espaçamento entre imagem e texto */
-        border-radius: 20px; /* Borda curva para a imagem */
-    }
 
-    /* Estilos para o título */
+margin-right: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+max-height: 100%;
+}
+
+.post-image img{
+width: auto; 
+height: 200px; 
+border-radius: 20px; 
+}
+
     .post-title {
-        font-size: 1.5em; /* Tamanho da fonte */
-        margin-top: 0; /* Remove margem superior padrão */
-        margin-bottom: 5px; /* Espaçamento abaixo do título */
+        font-size: 1.5em; 
+        margin-top: 0; 
+        margin-bottom: 5px; 
         margin-left: 5px;
     }
 
-    /* Estilos para a descrição */
     .post-description {
-        font-size: 1em; /* Tamanho da fonte */
-        color: rgb(116, 155, 116); /* Cor do texto da descrição */
-    }
-
-    .post-box li {
-        margin-left: 140px; /* Margem à esquerda para criar espaço para a imagem */
-        list-style-type: none; /* Remove os marcadores padrão de lista */
-        color: gray; /* Cor do texto da descrição */
-
-    }
-
-    .post-box li:before {
-        content: "●"; /* Define o conteúdo antes de cada item da lista como ">" */
-        margin-right: 5px; /* Adiciona um espaço entre a seta e o texto */
-        color: rgb(116, 155, 116);
+        font-size: 1em; 
+        color: rgb(116, 155, 116); 
     }
 
     .texto-box-post h2 {
     color: black;
     align-items: center;
 }
-.post-navigation {
+    .post-navigation {
         text-align: center;
         margin-top: 20px;
     }
@@ -91,67 +81,77 @@
     }
     .box-blog a {
             margin-bottom: 10px;
-            text-decoration: none; /* Remove o sublinhado */
+            text-decoration: none; 
             color: black;
         }
     .box-blog a:hover {
-            text-decoration: underline; /* Adiciona sublinhado quando o mouse passa por cima */
+            text-decoration: underline; 
             color: black;}
-        .post-content{margin: 6vh;
+    .post-content{margin: 6vh;
         margin-left: 5px;}
+        
         h1{text-align: center;
             
         }
-    hr {background-color: green;
-        width: 20vw;
-    height: 7px;
-border-radius: 50px;
-margin-bottom: 20px;}
+    .box-blog hr {background-color: green;
+        width: 270px;
+        height: 7px;
+        border-radius: 50px;
+        margin-bottom: 20px;}
 
-.post-box hr{width: 59vw;
-height: 4px;}
+    .post-box hr{width: 100%;
+                height: 4px;
+            align-items: left;}
+
+            @media (max-width: 640px) {
+        .post-box li{text-align: justify; margin-right: 5vw;}
+        .post-box {
+            display: flex;
+            flex-wrap: wrap;}
+        }
     </style>
 </head>
 <body>
     <menu>
-        <nav>
-<div class="logo">
-<a href="../index.html"><img src="../assets/nome-com-logo.png" alt="Logo Remsoma"></a>
-
-</div>   <a id="inicio"></a>
-
-
-            <ul>
+        <nav id="navbar">
+    <div class="logo">
+    <a href="../index.html"><img src="../assets/nome-com-logo.png" alt="Logo Remsoma"></a>
+    
+    </div>   <a id="inicio"></a>
+    <div class="mobile-menu">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    </div>
+    
+            <ul class="nav-list">
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="como-ajudar.html">Como Ajudar</a></li>
-                <!--<ul class="dropdown-content">           
-                   <li><a href="#">Canal de Denúncia</a></li>
-                    <li><a href="#">Campanhas</a></li>
-                    <li><a href="#">Doações</a></li>
-                </ul>-->
                 <li><a href="#contato">Contato</a></li>
-                <li class="menu-btn"><a href="formulário.html"><button>Inscreva-se</button></a></li>
-
+                <li class="menu-btn"><a href="../formulário.html"><button>Inscreva-se</button></a></li>
+    
             </ul>
         </nav>
+    </menu>
+    
+    
 
-<!-- Exemplo de um post -->
 <div class="box-blog">
   <h1>Campanhas</h1><hr>
 
-    <div class="post-box">
-        <img src="data:image/png;base64,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" alt="Imagem do post" class="post-image">
-        <div class="post-content">
+    <div class="post-box"><div  class="post-image">
+        <img src="data:image/png;base64,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" alt="Imagem do post">
+    </div><div class="post-content">
             <a target="_blank" href="https://www.firjan.com.br/noticias/premio-firjan-de-sustentabilidade-2024.htm"><h2 class="post-title">Inscrições abertas para o Prêmio Firjan de Sustentabilidade 2024
             </h2></a><hr>
             <h2 class="post-description">27/03/2024 - 16:49</h2>
         </div>  </div>
 
 
-        <div class="post-box">
-            <img src="https://pbs.twimg.com/profile_images/1192168839259271170/lKk-D6BR_400x400.jpg" alt="Imagem do post" class="post-image">
+        <div class="post-box"><div  class="post-image">
+            <img src="https://pbs.twimg.com/profile_images/1192168839259271170/lKk-D6BR_400x400.jpg" alt="Imagem do post"></div>
             <div class="post-content">
                 <a target="_blank" href="https://idbinvest.org/pt/sustainability/sustainability-week-2024"><h2 class="post-title">Semana da Sustentabilidade
                 </h2></a><hr>
@@ -159,8 +159,8 @@ height: 4px;}
             </div>  </div>
 
 
-            <div class="post-box">
-                <img src="https://media.licdn.com/dms/image/D4D0BAQEeJF34o6jKaw/company-logo_200_200/0/1709321386356?e=2147483647&v=beta&t=x-C0CANcSk8x9RGqHMtrs7hixWDTT9RyGRRboNu1P6M" alt="Imagem do post" class="post-image">
+            <div class="post-box"><div  class="post-image">
+                <img src="https://media.licdn.com/dms/image/D4D0BAQEeJF34o6jKaw/company-logo_200_200/0/1709321386356?e=2147483647&v=beta&t=x-C0CANcSk8x9RGqHMtrs7hixWDTT9RyGRRboNu1P6M" alt="Imagem do post"> </div>
                 <div class="post-content">
                     <a target="_blank" href="https://www.greenfarmco2free.com.br/campanha-2023-sustentabilidade-para-empresas/"><h2 class="post-title">Campanha sustentabilidade para empresas</h2></a><hr>
                     <h2 class="post-description">05/12/2023 - 19:03</h2>
@@ -170,18 +170,8 @@ height: 4px;}
                 
             </div>
 
-
-
-
-
-
-
-
-
-
-
-    <div class="post-box">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWUtAoGi43mJwd9L3msqN3keu21USPEe9qkPaay6RVkw&s" alt="Imagem do post" class="post-image">
+    <div class="post-box"><div  class="post-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWUtAoGi43mJwd9L3msqN3keu21USPEe9qkPaay6RVkw&s" alt="Imagem do post" ></div>
         <div class="post-content">
             <a target="_blank" href="https://www.capital.sp.gov.br/w/noticia/prefeitura-promove-semana-da-sustentabilidade"><h2 class="post-title">Prefeitura promove Semana da Sustentabilidade</h2></a><hr>
             <h2 class="post-description">23/03/2023 - 15:23</h2>
@@ -191,109 +181,103 @@ height: 4px;}
         
     </div>
 </div>
-    <footer>   
+<footer>   
 
-        <div class="container-footer"> 
-            <div class="coluna-logo">
-                <img src="../assets/nome-com-logo.png" class="img-footer" alt="Remsoma"/>
-                <p>Somos uma equipe apaixonada por proteger o meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam São Paulo.</p>
-                <hr class="hr-footer">
-                <p class="share-text-footer">Compartilhe o nosso projeto</p>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Remsoma&title=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la." target="_blank"><img src="../assets/linkedin-logo-footer.png" class="img-share-footer"></a>
-                <a href="https://twitter.com/intent/tweet?text=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la.&url=https://github.com/Remsoma" target="_blank"><img src="../assets/x-logo-footer.png" class="img-share-footer"></a>
-                <a href="https://github.com/Remsoma" target="_blank"><img src="../assets/github-logo-footer.png" class="img-share-footer"></a>
-    
-            </div>
-            <div class="coluna-paginas" >
-                <h3><a href="index.html">A Remsoma</a></h3>
-                <hr class="hr-footer">
-    
-                <h3>Entenda nossos objetivos</h3>
-                <ul>
-                    <li><a href="sobre-nos.html">Sobre nós</a></li>
-                    <li><a href="impacto-poluicao.html">Impacto da Poluição</a></li>
-    
-                </ul>
-                <hr class="hr-footer">
-                <h3>Como nos ajudar</h3>
-                <ul>
-                    <li><a href="canal-de-denuncia.html">Canal de Denúncia</a></li>
-                    <li><a href="canal-de-campanhas.html">Campanhas</a></li>
-                    <li><a href="doacoes.html">Doações</a></li>
-                </ul>
-                <hr class="hr-footer">
-                <h3>Atente-se às novidades e informações</h3>
-                <ul>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="../formulário.html">Inscreva-se</a></li>
-                </ul>
-                <hr class="hr-footer">
-    
-    
-    
-            </div>
-            <div class="coluna-contato">
-                <div class="container-contato">
-                    <h2>Entre em Contato</h2>
-                    <form  action="#" method="post">
-                        <label for="nome">Nome:</label>
-                        <input class="input-footer" type="text" id="nome" name="nome" required>
-                
-                        <label for="email">E-mail:</label>
-                        <input class="input-footer" type="email" id="email" name="email" required>
-                
-                        <label for="assunto">Assunto:</label>
-                        <select class="input-footer" id="assunto" name="assunto" required>
-                            <option value="" disabled selected hidden>Selecione uma opção</option>
-                            <option value="doação">Doação</option>
-                            <option value="vendas">Vendas</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="voluntariado">Voluntariado</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea class="input-footer" id="mensagem"  name="mensagem" required></textarea>
-                
-                        <input class="botao-footer" type="submit" value="Enviar">
-                    </form>  <a id="contato"></a>
-                </div>
+    <div class="container-footer"> 
+        <div class="coluna-logo">
+            <img src="../assets/nome-com-logo.png" class="img-footer" alt="Remsoma"/>
+            <p>Somos uma equipe apaixonada por proteger o meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam São Paulo.</p>
+            <hr class="hr-footer">
+            <p class="share-text-footer">Compartilhe o nosso projeto</p>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Remsoma&title=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la." target="_blank"><img src="../assets/linkedin-logo-footer.png" class="img-share-footer"></a>
+            <a href="https://twitter.com/intent/tweet?text=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la.&url=https://github.com/Remsoma" target="_blank"><img src="../assets/x-logo-footer.png" class="img-share-footer"></a>
+            <a href="https://github.com/Remsoma" target="_blank"><img src="../assets/github-logo-footer.png" class="img-share-footer"></a>
+
+        </div>
+        <div class="coluna-paginas" >
+            <h3><a href="../index.html">A Remsoma</a></h3>
+            <hr class="hr-footer">
+
+            <h3>Entenda nossos objetivos</h3>
+            <ul>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+                <li><a href="impacto-poluicao.html">Impacto da Poluição</a></li>
+
+            </ul>
+            <hr class="hr-footer">
+            <a href="como-ajudar.html"><h3>Como nos ajudar</h3> </a>
+            <ul>
+                <li><a href="canal-de-denuncia.html">Canal de Denúncia</a></li>
+                <li><a href="canal-de-campanhas.html">Campanhas</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+            </ul>
+            <hr class="hr-footer">
+            <h3>Atente-se às novidades e informações</h3>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="../formulário.html">Inscreva-se</a></li>
+            </ul>
+            <hr class="hr-footer">
+
+
+
+        </div>
+        <div class="coluna-contato">
+            <div class="container-contato">
+                <h2>Entre em Contato</h2>
+                <form  action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input class="input-footer" type="text" id="nome" name="nome" required>
+            
+                    <label for="email">E-mail:</label>
+                    <input class="input-footer" type="email" id="email" name="email" required>
+            
+                    <label for="assunto">Assunto:</label>
+                    <select class="input-footer" id="assunto" name="assunto" required>
+                        <option value="" disabled selected hidden>Selecione uma opção</option>
+                        <option value="doação">Doação</option>
+                        <option value="vendas">Vendas</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="outro">Outro</option>
+                    </select>
+            
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="input-footer" id="mensagem"  name="mensagem" required></textarea>
+            
+                    <input class="botao-footer" type="submit" value="Enviar">
+                </form>  <a id="contato"></a>
             </div>
         </div>
-        <div class="copyright-footer">
-            <p>Todos os direitos reservados &copy; 2024 Remsoma</p>
-        </div>
-    </footer>div
-    </footer>
-    
-    <div id="result"></div>
     </div>
-    
-    <script src="script.js"></script>
-    
-    <!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
-    <!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../scroll-suave.js"></script>
-    <!-- script para descer ou subir com o nav-->
-    <script>
-    let lastScrollTop = 0;
-    const navbar = document.getElementById('navbar');
-    
-    window.addEventListener('scroll', function() {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-        if (scrollTop > lastScrollTop) {
-            // Descendo
-            navbar.classList.add('hidden');
-        } else {
-            // Subindo
-            navbar.classList.remove('hidden');
-        }
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar o caso de rolar até o topo
-    });
-    </script>
+    <div class="copyright-footer">
+        <p>Todos os direitos reservados &copy; 2024 Remsoma</p>
+    </div>
 
+</footer>
+
+<!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
+<!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../scroll-suave.js"></script>
+<!-- script para descer ou subir com o nav-->
+<script>
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Descendo
+        navbar.classList.add('hidden');
+    } else {
+        // Subindo
+        navbar.classList.remove('hidden');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar o caso de rolar até o topo
+});
+</script>         <script src="../mobile-navbar.js"></script>
 
 
 </body>

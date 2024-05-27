@@ -1,4 +1,4 @@
-body { /*antes aqui era * */
+body { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +8,9 @@ body { /*antes aqui era * */
 :root {
     /* Definição de variáveis de cor */
     --cor-primaria: #2e7d32; /* Verde */
-    --cor-fundo: rgb(221, 217, 217); /* Branco */
-    --cor-hover: #c5e1a5; /* Verde claro para hover */
+    --cor-fundo: rgb(221, 217, 217); /* Branco meio difernte*/
+    --cor-hover: #c5e1a5; /* Verde claro*/
     --cor-neutro: #f2f2f2; /* Tom neutro */
-    /* Definição de variável de fonte */
     --fonte-principal: Arial, sans-serif;
 }
 
@@ -19,49 +18,34 @@ body {
     background-color: var(--cor-fundo);
 }
 
-/*menu {
-    background-color: var(--cor-primaria);
-    padding: 20px 0;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 1000;
-}*/
 
-/*
-nav {
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:  0 160px;
-}*/
 nav {
     
         margin-top: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding:  0 160px;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
+        height: 43px;
         background-color: var(--cor-primaria);
         color: #fff;
-        transition: top 0.3s;
+        transition: top 0.5s;
         z-index: 1000;
+        padding: 10px 0;
     
 }
 .hidden {
-    top: -100px; /* Esconde a barra de navegação acima do viewport */
+    top: -101vh; /* Esconde o nav normal e o nav mobile se tiver aberto*/
 }
 
 
 .logo img {
 width: 140px;
-margin-right: 150px;
+margin-right: 6vw;
+margin-left: 4vw;
 }
 
 
@@ -71,54 +55,156 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centraliza os itens verticalmente */
+    align-items: center; 
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 15px;
+
+}
+
+nav ul li:first-child {
+    margin-left: 10px;
 
 }
 
 nav ul li:last-child {
-    margin-right: 0;
+    margin-right: 5px;
 }
 
 nav ul li a {
     color: var(--cor-hover);
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px; /* Reduz o espaçamento interno do link */
+    padding: 10px 15px; 
     transition: color 0.3s;
-    display: block; /* Transforma o link em um bloco para melhor espaçamento */
+    display: block; 
 
 }
 
 nav ul li a:hover {
     color: #89ff03;
+    text-decoration: underline;
+    transform: scaleX(1.05);
+    text-decoration-style: solid; 
+ 
+
 }
 
-
-
-
-
-
-
-
-
+nav ul li a::after {
+    transform: scaleX(0);
+    transition: transform 0.25s ease-out, height 0.25s ease-out; 
+  }
 
 .menu-btn button {
     background-color: #4caf50;
     color: #ffffff;
     border: none;
-    padding: 10px 15px; /* Reduz o espaçamento interno do botão */
+    padding: 10px 15px; 
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 10vw;
+
+}
+
+
+
+
+.menu-btn a.btn-primary {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px; 
     border-radius: 5px;
     cursor: pointer;
-    margin-left:100px;
 }
+
+.menu-btn {    margin: 0 10vw;}
+
 
 .menu-btn button:hover {
     background-color: #45a049;
+    
 }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+    margin-left: 45vw;
+    margin-right: 1vw;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 1080px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 62px;
+      right: 0;
+      width: 40vw;
+      height: 86vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      border-bottom-left-radius: 20px;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+/*ate aqui*/
 
 .main {
     padding: 40px;
@@ -149,49 +235,79 @@ main h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
+
+.container-remsoma hr{background-color: var(--cor-primaria);
+    width: 120px;
+    height: 10px;
+    border-radius: 50px;
+    margin-left: 0;}
+
+    .container-remsoma {
+        background-color: white;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        padding: 4vh 10vw;
+        padding-right: 4vw;
+
+    }
+    
+    .image-container {
+        flex: 1;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        max-height: 100%; 
+        height: auto; 
+    }
+    
+    .text-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
 }
 
-.image-container {
-    flex: 1;
-    padding-right: 20px;
+.recomendacoes{margin: 4vh 8vw;        text-align: center; 
 }
 
-.text-container {
-    flex: 1;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
+.recomendacoes hr{background-color: var(--cor-primaria);
+    width: 320px;
+    height: 10px;
+    border-radius: 50px;
+    }
+.recomendacoes h1 {margin: 4vh 10vw}
 
 .quadradinho {
-    width: 200px;
+    width: 30vw;
     height: 200px;
     background-color: var(--cor-verde-suave);
-    margin: 30px;
     display: inline-block;
-    border-radius: 25%;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transform */
+    border-radius: 10%;
+    transition: transform 0.3s ease; 
+    display: flex;
+    justify-content: center; 
+    background-color: white;
+    margin: 2vh 4vw;
 }
+  
 
 .quadradinho:hover {
-    transform: scale(1.1); /* Aumenta a escala do quadrado quando o mouse passa sobre ele */
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .quadradinho-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .quadradinho img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
 }
@@ -202,70 +318,49 @@ img {
     line-height: 26px;
     max-width: 70%;
     text-align: center;
-}
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente ao centro */}
+
+    @media (max-width: 1250px) {.quadradinho-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+        .quadradinho{    display: flex;
+            width: 80vw;
+            margin: 4vh 10vw;
+            height: 160px;
+        }
+        .recomendacoes{margin: 4vh 2vw;        text-align: center; /* Centraliza o conteúdo horizontalmente */
+        }
+    }
+
 
 span {
     font-size: 1.3rem;
     line-height: 30px;
 }
 
-.desafios-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15%; /* Adiciona uma margem superior para separar dos quadradinhos */
-}
 
-.desafio {
-    background-color: var(--cor-neutro); /* Altera para tom neutro */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    max-width: 300px;
-}
-
-.desafio h2 {
-    color: #333; /* Cor do título */
-    font-size: 1.8rem; /* Tamanho da fonte do título */
-    margin-bottom: 10px; /* Espaçamento inferior do título */
-}
-
-.desafio p {
-    color: #666; /* Cor do texto */
-    font-size: 1.6rem; /* Tamanho da fonte do texto */
-    margin-bottom: 20px; /* Espaçamento inferior do texto */
-}
-
-.desafio button {
-    background-color: #4caf50; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: none; /* Remove a borda do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border-radius: 5px; /* Borda arredondada do botão */
-    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
-    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
-}
-
-.desafio button:hover {
-    background-color: #45a049; /* Altera a cor de fundo ao passar o mouse sobre o botão */
-}
 
 .dicas-sustentabilidade {
     background-image:url(assets/Design\ sem\ nome\ \(1\).png) ;
     margin-top: 5%;
-    background-color: var(--cor-fundo); /* Altera para tom neutro */
+    background-color: var(--cor-fundo); 
     padding: 40px 0;
+    background-color: white;
+    background-repeat: repeat-y;
     
 }
 
 .dicas-sustentabilidade h2 {
-    margin-right: 20px;
+    margin-right: 2vw;
+    margin-left: 20vw;
     color: #333; 
-    font-size: 2.2rem; /* Tamanho da fonte */
+    font-size: 2.2rem; 
     text-transform: uppercase; 
-    letter-spacing: 2px; /* Espaçamento entre letras */
+    letter-spacing: 2px; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
-}
+    }
 
 
 .dicas-sustentabilidade .dicas {
@@ -276,6 +371,7 @@ span {
 
 .dica {
     margin-bottom: 40px;
+    margin-left: 20vw
 }
 
 
@@ -309,7 +405,7 @@ span {
         footer {
             background-color: #2a492e;
             color: #fff;
-            padding-top: 20px; /*ver se fica melhor com zero ou vinte */
+            padding-top: 20px; 
             margin: 0;
             font-family: Arial, sans-serif;
         }
@@ -322,26 +418,29 @@ span {
 
 
         .img-footer {width: 100%;
-            max-height: 100%; /* Evita que a imagem estique além da altura da coluna */
+            max-height: 100%; 
     }
 
-        .img-share-footer-container{display: flex; /* Define o container como um flex container */
+        .img-share-footer-container{display: flex; 
         }
         .img-share-footer{
-            margin-right: 10px; /* Adiciona uma margem entre as imagens */
+            margin-right: 10px; 
             width: 10%;
             max-height: 100%;
-            transition: opacity 0.3s ease; /* Adiciona uma transição suave */
+            transition: opacity 0.3s ease; 
         }
         .img-share-footer:hover {
-            opacity: 0.5; /* Diminui a opacidade quando o mouse passa por cima */
+            opacity: 0.5; 
           }
 
-        /* Estilos para as colunas do footer*/
+          /*colunas do footer*/
         .coluna-logo {
             flex-basis: 20%;
             margin-left: 1vw;
             align-items: center;
+            text-align: justify;
+            transition: transform 0.3s ease; 
+
             
         }
         .coluna-contato {
@@ -353,18 +452,14 @@ span {
             margin-left: 8vw;
         }
 
-    
-
-
-        /* Estilos para o conteúdo dentro das colunas */
         .coluna-paginas a {
             margin-bottom: 10px;
-            color: white; /* Define a cor do texto como branca */
-            text-decoration: none; /* Remove o sublinhado */
+            color: white; 
+            text-decoration: none; 
         }
         .coluna-paginas a:hover {
-            text-decoration: underline; /* Adiciona sublinhado quando o mouse passa por cima */
-            color: white; /* Mantém a cor do texto do link como branco */}
+            text-decoration: underline; 
+            color: white; }
 
         .coluna-paginas ul {
             list-style-type: none;
@@ -372,17 +467,16 @@ span {
         }
         .coluna-paginas ul li {
             margin-bottom: 5px;
-            list-style-type: none; /* Remove os marcadores padrão de lista */
+            list-style-type: none; /
 
         }
         .coluna-paginas li:before {
-            content: ">"; /* Define o conteúdo antes de cada item da lista como ">" */
-            margin-right: 5px; /* Adiciona um espaço entre a seta e o texto */}
-        /* Estilos gerais CONTAINER CONTATO*/
+            content: ">"; /* poe ">" antes de cada item*/
+            margin-right: 5px; }
 
     .container-contato {
         max-width: 600px;
-        max-height: 600px; /*mexer no max do container, mas tem que mexer no tamanho do imput */
+        max-height: 600px; 
         margin: 20 px auto 50px;
         background-color: #477c52;
         padding: 20px;
@@ -415,13 +509,44 @@ span {
         transition: background-color 0.3s ease;
     }
     .botao-footer:hover {
-        background-color: #45a049; /*cor hover botao*/
+        background-color: #45a049; 
 
     }
     .share-text-footer {color: #5e7a61;}
     .hr-footer{  border-color: rgb(93, 121, 96);
     }
     .copyright-footer {
-        background-color: #1c311f; /* Cor de fundo da caixa de direitos autorais */
-        padding: 10px; /* Espaçamento interno */
-        text-align: center; /* Alinhamento de texto centralizado */}
+        background-color: #1c311f; 
+        padding: 10px; 
+        text-align: center; }
+
+     /*  responsividade no footer em telas menores*/
+
+     @media (max-width: 870px) {
+        .container-footer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .coluna-logo {
+            flex-basis: 38vw; 
+            margin: 0 3vw; 
+        }
+    
+        .coluna-contato {
+            flex: 1 1 40vw; 
+            margin-top: 5vh; 
+
+
+        }
+        .coluna-contato h2 {
+            text-align: center;
+        }
+    
+        .coluna-paginas {
+            flex-basis: 40vw;
+           margin-right: 4vw;
+
+        }
+        .botao-footer {align-self: center;}
+    }

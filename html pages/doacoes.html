@@ -2,32 +2,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós - Remsoma</title>
+    <title>Doações - Remsoma</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../assets/icon.png" type="image/png">
 
     <style>
-        /* Estilos específicos para a página de doações */
-        body {
-            margin: 0;
-            padding-top: 95px; /* Adiciona espaço extra no topo */
-            padding-bottom: 20px; /* Adiciona espaço extra no final */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-        }
-
         .container {
-            max-width: 800px;
+            max-width: 40vw;
+            margin: 15vh 30vw;
+            margin-bottom: 10vh;
             padding: 20px;
             text-align: center;
+            flex-direction: column;
+            justify-content: center;
             display: flex;
             flex-direction: column;
             gap: 20px;
-        }
+            min-height: 60vh;}
 
         h1 {
             color: #333;
@@ -97,29 +88,29 @@
 
 <body>
     <menu>
-        <nav>
+        <nav id="navbar">
     <div class="logo">
     <a href="../index.html"><img src="../assets/nome-com-logo.png" alt="Logo Remsoma"></a>
     
     </div>   <a id="inicio"></a>
+    <div class="mobile-menu">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    </div>
     
-    
-            <ul>
+            <ul class="nav-list">
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="como-ajudar.html">Como Ajudar</a></li>
-                <!--<ul class="dropdown-content">           
-                   <li><a href="#">Canal de Denúncia</a></li>
-                    <li><a href="#">Campanhas</a></li>
-                    <li><a href="#">Doações</a></li>
-                </ul>-->
                 <li><a href="#contato">Contato</a></li>
-                <li class="menu-btn"><a href="formulário.html"><button>Inscreva-se</button></a></li>
+                <li class="menu-btn"><a href="../formulário.html"><button>Inscreva-se</button></a></li>
     
             </ul>
         </nav>
-        </menu>
+    </menu>
+    
 
         <div class="container">
             <h1>Faça sua doação</h1>
@@ -149,7 +140,7 @@
         
                 </div>
                 <div class="coluna-paginas" >
-                    <h3><a href="index.html">A Remsoma</a></h3>
+                    <h3><a href="../index.html">A Remsoma</a></h3>
                     <hr class="hr-footer">
         
                     <h3>Entenda nossos objetivos</h3>
@@ -159,7 +150,7 @@
         
                     </ul>
                     <hr class="hr-footer">
-                    <h3>Como nos ajudar</h3>
+                    <a href="como-ajudar.html"><h3>Como nos ajudar</h3> </a>
                     <ul>
                         <li><a href="canal-de-denuncia.html">Canal de Denúncia</a></li>
                         <li><a href="canal-de-campanhas.html">Campanhas</a></li>
@@ -210,11 +201,6 @@
         
         </footer>
         
-        <div id="result"></div>
-        </div>
-        
-        <script src="script.js"></script>
-        
         <!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
         <!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -236,5 +222,6 @@
             }
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar o caso de rolar até o topo
         });
-        </script>
+        </script>         <script src="../mobile-navbar.js"></script>
+        
 </body>

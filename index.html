@@ -4,9 +4,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remsoma</title>
+    <title>Início - Remsoma</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/icon.png" type="image/png">
+
+<style>
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.home-banner{
+    background: url("assets/home-poluicao-rio2.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh; /*mudar no celular - era 55 no pc*/
+  margin-top: 60px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    }
+.home-banner h1{
+    color: white;
+  align-items: center;
+  text-align: justify;
+    padding: 0 20vw;
+    padding-top: 20vh;   
+     font-size: 8vh;
+     margin-bottom: 0;
+     
+    }    
+    .home-banner h1:last-child{
+    padding: 0 20vw;
+        padding-top: 0;
+    }    
+
+    .home-banner h3{
+    color: rgb(214, 228, 214);
+  align-items: center;
+  text-align: justify;
+  padding: 0 20vw;
+  margin-top: 5px;
+  font-size: 3.5vh;
+    }    
+
+ 
+    @media (min-height: 550px) and (max-width: 800px) {
+    .home-banner h1{font-size: 5vh; 
+    padding-top: 15vh}
+  .home-banner h3{font-size: 2.5vh;
+padding-bottom: 3vh;}
+.home-banner {height: 70vh}}
+
+
+.botao-verde{margin: 3vh 0;
+    margin-right: 2vw;
+    border-radius: 80px;
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: white;
+    height: 45px;
+    width: 13vw;
+    font-size: large;}
+
+
+.botoes-sobre-nos img{    vertical-align: middle;
+    height:45px;
+    width: auto;
+}
+
+@media (max-width: 740px) {
+
+    .container-remsoma{
+        flex-direction: column;
+        padding: 4vh 9vw; 
+        justify-content: center;
+    }
+
+    .botoes-sobre-nos{display: flex;
+    justify-content: center; 
+    align-items: center;
+width: 100%;}   
+
+    .botao-verde{width: 40vw;}
+
+     .text-container {
+        width: 100%; 
+    }
+
+    .image-container {
+        margin-bottom: 20px; 
+    }
+
+    }
+
+
+
+.botao-verde:hover{background-color: rgb(25, 90, 25);}
+
+
+.home-blog{background-color: rgb(40, 100, 40);
+color: white;
+padding: 4vh 10vw;}
+ 
+.blog-posts {display: flex;
+    gap: 5vw; 
+    margin-top: 15px;
+text-align: justify;}
+
+.link-post {width: 50vw;}
+
+.link-post a{text-decoration: none;
+color:white}
+.link-post a:hover{text-decoration: underline;}
+
+.home-blog hr {margin-top: 10px;}
+
+.como-ajudar{padding: 20vh 8vw;
+text-align: center;}
+
+.como-ajudar span{font-size: 22px;}
+
+.como-ajudar b{
+color: rgb(34, 94, 34);
+font-size: 1.15em;}
+
+
+
+
+.canal-denuncia{background-color: white;
+padding: 10vh;
+display: flex;
+justify-items: center;
+gap: 8vw}
+
+.canal-denuncia-video{flex-basis: 36vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.canal-denuncia-texto{flex-basis: 36vw;}
+
+
+.canal-denuncia-texto hr{background-color: red;
+    width: 90px;
+    height: 10px;
+    border-radius: 50px;
+    margin-left: 0;}
+
+    .canal-denuncia-texto button{background-color: red;
+        width: 10vw;
+        color: white;
+        font-size: large;
+        border-radius: 30px;
+        align-items: right;
+        margin-top: 20px;
+   }
+   .canal-denuncia-texto button:hover{background-color: rgb(165, 0, 0);}
+
+   @media (max-width: 1015px) { 
+    
+    .canal-denuncia{
+        flex-direction: column;
+        padding: 4vh 9vw; 
+        justify-content: center;
+        gap: 2vh;
+    }    
+    .canal-denuncia button{width: 40vw;
+}}
+
+
+
+   .inscreva-se{height: 60vh;
+    background: url("/assets/home-inscreva-se.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;}
+
+    .inscreva-se hr{background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 6px;
+    border-radius: 50px;
+    margin-left: 0;}
+
+.inscreva-se-texto{padding: 10vh 10vw;
+width: 80vw;
+color: white;
+padding-bottom: 20vh;
+text-align: left;
+}
+
+.inscreva-se button{
+        width: 30vw;
+        font-size: large;
+        border-radius: 30px;
+        align-items: right;
+        margin-top: 20px;}
+.inscreva-se button:hover{background-color: rgb(223, 223, 223);}
+
+@media (min-height: 350px) and (max-width: 1600px) { /*antes era 550 e 800px*/
+    .inscreva-se{height: 100vh;}
+}
+
+@media (min-height: 1px) and (max-width: 800px) {
+    .inscreva-se{height: 100vh; }
+    .inscreva-se h1{font-size: 1.5rem;}
+    .inscreva-se-texto {transform: 0.2;}
+    
+    .inscreva-se button {width: 50vw;}}
+
+
+
+
+ 
+</style>
 
 </head>
 
@@ -18,18 +233,17 @@
 <a href="index.html"><img src="assets/nome-com-logo.png" alt="Logo Remsoma"></a>
 
 </div>   <a id="inicio"></a>
+<div class="mobile-menu">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
 
-
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="html pages/sobre-nos.html">Sobre Nós</a></li>
                 <li><a href="html pages/blog.html">Blog</a></li>
                 <li><a href="html pages/como-ajudar.html">Como Ajudar</a></li>
-                <!--<ul class="dropdown-content">           
-                   <li><a href="#">Canal de Denúncia</a></li>
-                    <li><a href="#">Campanhas</a></li>
-                    <li><a href="#">Doações</a></li>
-                </ul>-->
                 <li><a href="#contato">Contato</a></li>
                 <li class="menu-btn"><a href="formulário.html"><button>Inscreva-se</button></a></li>
 
@@ -37,32 +251,98 @@
         </nav>
     </menu>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Cansado de ver o nosso planeta sufocar sob o peso da poluição? Nós também!</h1>
-            </div>
-        </section>
-    </main>
 
-    <div class="container">
-        <div class="image-container">
-            <img src="assets/Design sem nome.png" alt="Imagem de pessoas">
-        </div>
+<div class="home-banner">
+    <h1> Cansado de ver a cidade de São Paulo sufocar sob o peso da poluição? 
+    </h1>
+    <h3> Este site é o seu ponto de partida para se <u>informar</u>, <u>engajar</u> e <u>fazer a diferença.</u></h3>
+</div>
+
+
+    <div class="container-remsoma">
         <div class="text-container">
+            <hr>
+            <h1>Conheça sobre Remsoma</h1>
+            
+                    <span>
+                        Bem-vindo a Remsoma! Dedicado à luta contra a poluição em São Paulo, somos uma equipe apaixonada por proteger o
+                            meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam nossa cidade. Nosso objetivo
+                            é oferecer recursos informativos e inspiradores para capacitar indivíduos a reduzir sua pegada ecológica e
+                            promover mudanças positivas. Acreditamos na importância da comunidade e do trabalho colaborativo. 
+                            Junte-se a nós nesta jornada para um mundo mais limpo e saudável.
 
-<h1>Remsoma</h1>
+                         
+                    </span>
+                    <div class="botoes-sobre-nos">
+                        <a href="html pages/sobre-nos.html"><button class="botao-verde">Sobre nós</button></a>
+                    <a href="https://github.com/Remsoma" target="_blank"><img src="assets/github-image.png"></a></div>
 
-        <span>
-            Bem-vindo ao Remsoma, dedicado à luta contra a poluição. Somos uma equipe apaixonada por proteger o
-                meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam nosso planeta. Nosso objetivo
-                é oferecer recursos informativos e inspiradores para capacitar indivíduos a reduzir sua pegada ecológica e
-                promover mudanças positivas. Junte-se a nós nesta jornada para um mundo mais limpo e saudável.
-        </span>
-        </div>
+                    </div>
+        <div class="image-container"> 
+            <img src="assets/Design sem nome.png" alt="Imagem de pessoas">
+        </div> 
+        
     </div>
 
 
+
+
+<div class="como-ajudar">
+    <span><b>Juntos, podemos criar um futuro mais sustentável!</b> Nosso projeto de sustentabilidade<b> depende da colaboração de pessoas como você</b> para atingir nossos objetivos. <b>Adotar práticas sustentáveis</b> no seu dia a dia e no seu trabalho é uma forma poderosa de <b>apoiar nossa missão</b>. Descubra as maneiras que você pode nos ajudar.
+
+
+
+    </span><br>
+
+
+    <a href="html pages/como-ajudar.html"><button class="botao-verde">Como nos ajudar</button></a>
+</div>
+
+
+<div class="home-blog">
+    <h1>Blog</h1>
+    <span>Confira nossos posts mais recentes</span>
+    
+    <div class="blog-posts">
+        <div class="link-post">
+        <a href="html pages/blogPosts/id=1.html"><h2>Entenda como a poluição de São Paulo impactou Rio Tietê
+        </h2></a> <hr>
+        <spam>O Rio Tietê é um importante curso d'água localizado no estado de São Paulo, Brasil. Ele é amplamente conhecido por sua grave condição de poluição, devido ao despejo de esgoto doméstico e industrial, descarte inadequado de resíduos sólidos, poluição agrícola e assoreamento.
+        </spam><hr></div>
+        <div class="link-post">
+            <a href="html pages/blogPosts/id=0.html"><h2>Importância das árvores na luta contra a poluição de São Paulo
+            </h2></a><hr>
+            <spam>A presença estratégica de árvores nas cidades não apenas embeleza a paisagem urbana, mas também desempenha um papel vital na proteção contra enchentes e na gestão sustentável de poluentes aéreos.</spam><hr></div>
+    </div>
+    </div>
+
+
+<div class="canal-denuncia"> 
+    <div class="canal-denuncia-video">    <iframe width="560" height="315" src="https://www.youtube.com/embed/-rDC0fneZKA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="canal-denuncia-texto"><hr>
+        <h1>Canal de Denúncia</h1>
+        <span>Encontrou alguma atividade poluente ou prática prejudicial ao ecossistema? Sua voz é essencial para promover a responsabilidade e garantir um ambiente mais limpo e saudável para todos. Utilize nosso Canal de Denúncia ou o Disque denúncia 181.
+        </span><br>
+        <a href="html pages/canal-de-denuncia.html"><button>Denuncie</button></a>
+    </div>
+</div>
+<div class="inscreva-se">
+<div class="inscreva-se-texto"><hr>
+    <h1>Inscreva-se</h1>
+    <span>Quer ficar por dentro das últimas novidades, novos posts, campanhas e boas práticas diárias de sustentabilidade? Inscreva-se em nosso newsletter! Ao se inscrever, você receberá diretamente no seu e-mail informações atualizadas sobre nossos projetos, eventos e iniciativas. Mantenha-se informado, sua participação faz toda a diferença!
+    </span><br>
+    <a href="formulário.html"><button>Quero ficar informado!</button></a>
+</div>
+
+
+</div>
+
+
+<div class="recomendacoes">
+<hr>
+<h1>Para ter uma vida mais sutentável, recomendamos que você</h1>
     <div class="quadradinho-container">
         <div class="quadradinho">
             <img src="quadrados/1.png" alt="Imagem 1">
@@ -71,8 +351,10 @@
         <div class="quadradinho">
             <img src="quadrados/2.png" alt="Imagem 2">
             <p>Economize energia em casa.</p>
-        </div>
-        <div class="quadradinho">
+        </div></div>
+
+<div class="quadradinho-container">
+   <div class="quadradinho">
             <img src="quadrados/3.png" alt="Imagem 3">
             <p>Recicle e reutilize materiais sempre que possível.</p>
         </div>
@@ -80,28 +362,13 @@
             <img src="quadrados/4.png" alt="Imagem 4">
             <p>Participe de campanhas de limpeza da comunidade.</p>
         </div>
-    </div>
+    </div> 
+</div>
     
-    <div class="desafios-container">
-        <div class="desafio">
-            <h2>Desafio 1: Redução do Uso de Plástico</h2>
-            <p>O uso excessivo de plástico tem causado danos significativos aos oceanos e à vida marinha. Precisamos encontrar alternativas e incentivar práticas mais sustentáveis.</p>
-            <button>Saiba Mais</button>
-        </div>
-        <div class="desafio">
-            <h2>Desafio 2: Conservação da Biodiversidade</h2>
-            <p>A perda de habitats naturais e a extinção de espécies são ameaças urgentes que exigem ações imediatas para proteger e restaurar a biodiversidade em todo o mundo.</p>
-            <button>Saiba Mais</button>
-        </div>
-        <div class="desafio">
-            <h2>Desafio 3: Mitigação das Mudanças Climáticas</h2>
-            <p>O aumento das temperaturas globais está causando impactos devastadores, incluindo eventos climáticos extremos e a acidificação dos oceanos. Devemos reduzir as emissões de gases de efeito estufa e adotar práticas de adaptação.</p>
-            <button>Saiba Mais</button>
-        </div>
-    </div>
-    
-    <section class="dicas-sustentabilidade">
 
+
+
+    <section class="dicas-sustentabilidade">
         <div class="container">
             <h2>Dicas de Sustentabilidade</h2>
             <div class="dica">
@@ -117,85 +384,83 @@
     </section>
     
 
+   
+
+    <footer>   
+
+        <div class="container-footer"> 
+  
+            <div class="coluna-logo">
+                <img src="assets/nome-com-logo.png" class="img-footer" alt="Remsoma"/>
+                <p>Somos uma equipe apaixonada por proteger o meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam São Paulo.</p>
+                <hr class="hr-footer">
+                <p class="share-text-footer">Compartilhe o nosso projeto</p>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Remsoma&title=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la." target="_blank"><img src="assets/linkedin-logo-footer.png" class="img-share-footer"></a>
+                <a href="https://twitter.com/intent/tweet?text=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la.&url=https://github.com/Remsoma" target="_blank"><img src="assets/x-logo-footer.png" class="img-share-footer"></a>
+                <a href="https://github.com/Remsoma" target="_blank"><img src="assets/github-logo-footer.png" class="img-share-footer"></a>
+
+            </div>
+            <div class="coluna-paginas" >
+                <h3><a href="index.html">A Remsoma</a></h3>
+                <hr class="hr-footer">
+
+                <h3>Entenda nossos objetivos</h3>
+                <ul>
+                    <li><a href="html pages/sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="html pages/impacto-poluicao.html">Impacto da Poluição</a></li>
+
+                </ul>
+                <hr class="hr-footer">
+                <h3><a href="html pages/como-ajudar.html">Como nos ajudar</h3></a>
+                <ul>
+                    <li><a href="html pages/canal-de-denuncia.html">Canal de Denúncia</a></li>
+                    <li><a href="html pages/canal-de-campanhas.html">Campanhas</a></li>
+                    <li><a href="html pages/doacoes.html">Doações</a></li>
+                </ul>
+                <hr class="hr-footer">
+                <h3>Atente-se às novidades e informações</h3>
+                <ul>
+                    <li><a href="html pages/blog.html">Blog</a></li>
+                    <li><a href="formulário.html">Inscreva-se</a></li>
+                </ul>
+                <hr class="hr-footer">
+
     
-
-        <footer>   
-
-            <div class="container-footer"> 
-                <div class="coluna-logo">
-                    <img src="assets/nome-com-logo.png" class="img-footer" alt="Remsoma"/>
-                    <p>Somos uma equipe apaixonada por proteger o meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam São Paulo.</p>
-                    <hr class="hr-footer">
-                    <p class="share-text-footer">Compartilhe o nosso projeto</p>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Remsoma&title=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la." target="_blank"><img src="assets/linkedin-logo-footer.png" class="img-share-footer"></a>
-                    <a href="https://twitter.com/intent/tweet?text=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la.&url=https://github.com/Remsoma" target="_blank"><img src="assets/x-logo-footer.png" class="img-share-footer"></a>
-                    <a href="https://github.com/Remsoma" target="_blank"><img src="assets/github-logo-footer.png" class="img-share-footer"></a>
-
-                </div>
-                <div class="coluna-paginas" >
-                    <h3><a href="index.html">A Remsoma</a></h3>
-                    <hr class="hr-footer">
-
-                    <h3>Entenda nossos objetivos</h3>
-                    <ul>
-                        <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Impacto da Poluição</a></li>
-
-                    </ul>
-                    <hr class="hr-footer">
-                    <h3>Como nos ajudar</h3>
-                    <ul>
-                        <li><a href="#">Canal de Denúncia</a></li>
-                        <li><a href="#">Campanhas</a></li>
-                        <li><a href="#">Doações</a></li>
-                    </ul>
-                    <hr class="hr-footer">
-                    <h3>Atente-se às novidades e informações</h3>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Inscreva-se</a></li>
-                    </ul>
-                    <hr class="hr-footer">
-
-        
-
-                </div>
-                <div class="coluna-contato">
-                    <div class="container-contato">
-                        <h2>Entre em Contato</h2>
-                        <form  action="#" method="post">
-                            <label for="nome">Nome:</label>
-                            <input class="input-footer" type="text" id="nome" name="nome" required>
-                    
-                            <label for="email">E-mail:</label>
-                            <input class="input-footer" type="email" id="email" name="email" required>
-                    
-                            <label for="assunto">Assunto:</label>
-                            <select class="input-footer" id="assunto" name="assunto" required>
-                                <option value="" disabled selected hidden>Selecione uma opção</option>
-                                <option value="doação">Doação</option>
-                                <option value="vendas">Vendas</option>
-                                <option value="feedback">Feedback</option>
-                                <option value="voluntariado">Voluntariado</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                    
-                            <label for="mensagem">Mensagem:</label>
-                            <textarea class="input-footer" id="mensagem"  name="mensagem" required></textarea>
-                    
-                            <input class="botao-footer" type="submit" value="Enviar">
-                        </form>  <a id="contato"></a>
-                    </div>
+            </div>
+            <div class="coluna-contato"> <a id="contato"></a>
+                <div class="container-contato">
+                    <h2>Entre em Contato</h2>
+                    <form  action="#" method="post">
+                        <label for="nome">Nome:</label>
+                        <input class="input-footer" type="text" id="nome" name="nome" required>
+                
+                        <label for="email">E-mail:</label>
+                        <input class="input-footer" type="email" id="email" name="email" required>
+                
+                        <label for="assunto">Assunto:</label>
+                        <select class="input-footer" id="assunto" name="assunto" required>
+                            <option value="" disabled selected hidden>Selecione uma opção</option>
+                            <option value="doação">Doação</option>
+                            <option value="vendas">Vendas</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="voluntariado">Voluntariado</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="input-footer" id="mensagem"  name="mensagem" required></textarea>
+                
+                        <input class="botao-footer" type="submit" value="Enviar">
+                    </form>  
                 </div>
             </div>
-            <div class="copyright-footer">
-                <p>Todos os direitos reservados &copy; 2024 Remsoma</p>
-            </div>
+        </div>
+        <div class="copyright-footer">
+            <p>Todos os direitos reservados &copy; 2024 Remsoma</p>
+        </div>
 
-        </footer>
+    </footer>
 
-        <div id="result"></div>
-    </div>
 
     <script src="script.js"></script>
     
@@ -220,6 +485,8 @@
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar o caso de rolar até o topo
         });
     </script>
+    <!-- script para responsividade no nav no mobile-->
+     <script src="mobile-navbar.js"></script>
 </body>
 
 </html>

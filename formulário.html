@@ -4,36 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Inscrição</title>
+    <title>Inscreva-se - Remsoma</title>
+    <link rel="icon" href="assets/icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="formulario1.css">
+    <style>
+        /* Formulário */
+body {background-color: white;}
+
+.conteudo-pagina{margin: 30vh 10vw; 
+    display: flex;
+    
+gap: 5vw;
+justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    width: 80vw; /* Altura total da janela para visualização */
+    align-items: center; /* Centraliza o conteúdo verticalmente */}
+
+    .texto-inscreva-se{width: 40vw;}
+
+.form-container {
+    max-width: 30vw;
+    padding: 20px;
+    background-color: var(--cor-neutro); 
+    border-radius: 10px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 94%;
+    padding: 10px;
+    border-radius: 5px;
+        display: block;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-clip: padding-box;
+        border: 0.2px solid rgb(189, 189, 189);
+        border-radius: 7px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--cor-primaria); 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+.form-text{margin-top:.25rem;font-size:.875em;color:gray}
+
+@media(max-width: 700px) {
+.conteudo-pagina{display: flex;
+    flex-wrap: wrap;
+    margin:  10vh 5vw; ;
+    width: 90vw; /* Altura total da janela para visualização */
+
+}
+.texto-inscreva-se{width: 80vw; text-align: justify;}
+
+.form-container {
+    max-width: 90vw;}
+}
+    </style>
+
 </head>
 
 <body>
+    <menu>
+        <nav id="navbar">
+<div class="logo">
+<a href="index.html"><img src="assets/nome-com-logo.png" alt="Logo Remsoma"></a>
+
+</div>   <a id="inicio"></a>
+<div class="mobile-menu">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="html pages/sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="html pages/blog.html">Blog</a></li>
+                <li><a href="html pages/como-ajudar.html">Como Ajudar</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li class="menu-btn"><a href="formulário.html"><button>Inscreva-se</button></a></li>
+
+            </ul>
+        </nav>
+    </menu>
+
+    
+
+<div class="conteudo-pagina">
+<div class="texto-inscreva-se">
+<h1>Inscreva-se</h1>
+<p> Ao se inscrever, você receberá diretamente no seu e-mail informações atualizadas sobre nossos projetos, eventos e iniciativas. Mantenha-se informado, sua participação faz toda a diferença!</p>
+
+</div>
     <form class="form-container" action="pagina_formulario.html" method="post">
         <div class="form-group">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required placeholder="Seu primeiro nome">
         </div>
     
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="Seu melhor e-mail">
         </div>
-    
-        <div class="form-group">
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-        </div>
-    
+
         <div class="form-group">
             <input type="submit" value="Enviar">
+            <div id="emailHelp" class="form-text">Não compartilharemos suas informações com ninguém.</div>
         </div>
     </form>
     <form action="processa_formulario.php" method="post">
-        <!-- Seus campos de formulário aqui -->
-    </form>
     
-</body>
+    </form>
+</div>
 
+
+
+
+
+
+
+<footer>   
+
+    <div class="container-footer"> 
+
+        <div class="coluna-logo">
+            <img src="assets/nome-com-logo.png" class="img-footer" alt="Remsoma"/>
+            <p>Somos uma equipe apaixonada por proteger o meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam São Paulo.</p>
+            <hr class="hr-footer">
+            <p class="share-text-footer">Compartilhe o nosso projeto</p>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Remsoma&title=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la." target="_blank"><img src="assets/linkedin-logo-footer.png" class="img-share-footer"></a>
+            <a href="https://twitter.com/intent/tweet?text=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la.&url=https://github.com/Remsoma" target="_blank"><img src="assets/x-logo-footer.png" class="img-share-footer"></a>
+            <a href="https://github.com/Remsoma" target="_blank"><img src="assets/github-logo-footer.png" class="img-share-footer"></a>
+
+        </div>
+        <div class="coluna-paginas" >
+            <h3><a href="index.html">A Remsoma</a></h3>
+            <hr class="hr-footer">
+
+            <h3>Entenda nossos objetivos</h3>
+            <ul>
+                <li><a href="html pages/sobre-nos.html">Sobre nós</a></li>
+                <li><a href="html pages/impacto-poluicao.html">Impacto da Poluição</a></li>
+
+            </ul>
+            <hr class="hr-footer">
+            <h3><a href="html pages/como-ajudar.html">Como nos ajudar</h3></a>
+            <ul>
+                <li><a href="html pages/canal-de-denuncia.html">Canal de Denúncia</a></li>
+                <li><a href="html pages/canal-de-campanhas.html">Campanhas</a></li>
+                <li><a href="html pages/doacoes.html">Doações</a></li>
+            </ul>
+            <hr class="hr-footer">
+            <h3>Atente-se às novidades e informações</h3>
+            <ul>
+                <li><a href="html pages/blog.html">Blog</a></li>
+                <li><a href="formulário.html">Inscreva-se</a></li>
+            </ul>
+            <hr class="hr-footer">
+
+
+        </div>
+        <div class="coluna-contato"> <a id="contato"></a>
+            <div class="container-contato">
+                <h2>Entre em Contato</h2>
+                <form  action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input class="input-footer" type="text" id="nome" name="nome" required>
+            
+                    <label for="email">E-mail:</label>
+                    <input class="input-footer" type="email" id="email" name="email" required>
+            
+                    <label for="assunto">Assunto:</label>
+                    <select class="input-footer" id="assunto" name="assunto" required>
+                        <option value="" disabled selected hidden>Selecione uma opção</option>
+                        <option value="doação">Doação</option>
+                        <option value="vendas">Vendas</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="outro">Outro</option>
+                    </select>
+            
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="input-footer" id="mensagem"  name="mensagem" required></textarea>
+            
+                    <input class="botao-footer" type="submit" value="Enviar">
+                </form>  
+            </div>
+        </div>
+    </div>
+    <div class="copyright-footer">
+        <p>Todos os direitos reservados &copy; 2024 Remsoma</p>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scroll-suave.js"></script>
+<!-- script para descer ou subir com o nav-->
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Descendo
+            navbar.classList.add('hidden');
+        } else {
+            // Subindo
+            navbar.classList.remove('hidden');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar o caso de rolar até o topo
+    });
+</script>
+<!-- script para responsividade no nav no mobile-->
+ <script src="mobile-navbar.js"></script>
+     </body>
+     
 </html>

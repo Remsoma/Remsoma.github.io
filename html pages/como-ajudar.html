@@ -2,23 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós - Remsoma</title>
+    <title>Como Ajudar - Remsoma</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../assets/icon.png" type="image/png">
 
     <style>
 
         .conteudo h1{margin: 0 10vw;
-        margin-top: 7vw;
+        margin-top: 120px;
     text-align: center}
     .conteudo hr {background-color: green;
         width: 90vw;
-    height: 7px;
-border-radius: 50px}
-.conteudo u{color: green;
-}
+        height: 7px;
+        border-radius: 50px}
+
+.conteudo u{color: green;}
+
 .conteudo h3{color: gray;
             text-align: center;}
+
+            
 .descricao{color: gray;
             text-align: center;}
 
@@ -30,6 +33,8 @@ border-radius: 50px}
         margin: 0 2vw;
             }
 
+.conteudo1-2 {justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */}
 
         .container2 {text-align: center;
   display: flex;
@@ -86,75 +91,97 @@ color:white}
   opacity: 1;
 }
 
-
 footer{margin-top: 5vw;}
+
+@media (max-width: 930px) {
+  
+  .container2 {
+    display: flex;
+    flex-direction: column; /* Alinha os squares em linha inicialmente */
+ 
+}
+
+.titulo-ajuda{ display: flex;
+    flex-direction: column; /* Alinha os squares em linha inicialmente */
+
+  }
+    .conteudo1-2 {display: flex;}
+
+
+}
+
+#botaoCopiar{cursor: pointer;}
+
+
+
+
     </style>
 </head>
 
 <body>
   <menu>
-    <nav>
+    <nav id="navbar">
 <div class="logo">
 <a href="../index.html"><img src="../assets/nome-com-logo.png" alt="Logo Remsoma"></a>
 
 </div>   <a id="inicio"></a>
+<div class="mobile-menu">
+<div class="line1"></div>
+<div class="line2"></div>
+<div class="line3"></div>
+</div>
 
-
-        <ul>
+        <ul class="nav-list">
             <li><a href="../index.html">Início</a></li>
             <li><a href="sobre-nos.html">Sobre Nós</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="como-ajudar.html">Como Ajudar</a></li>
-            <!--<ul class="dropdown-content">           
-               <li><a href="#">Canal de Denúncia</a></li>
-                <li><a href="#">Campanhas</a></li>
-                <li><a href="#">Doações</a></li>
-            </ul>-->
             <li><a href="#contato">Contato</a></li>
-            <li class="menu-btn"><a href="formulário.html"><button>Inscreva-se</button></a></li>
+            <li class="menu-btn"><a href="../formulário.html"><button>Inscreva-se</button></a></li>
 
         </ul>
     </nav>
-    </menu>
+</menu>
+
 <div class="conteudo">
-    <h1>SUA ATITUDE TRANSFORMARÁ NÃO SÓ SÃO PAULO, MAS O MUNDO.</h1>
+    <h1>SUA ATITUDE É ESSENCIAL PARA A MUDANÇA</h1>
     <hr>
     <h3>Sua atitude salvará sua geração e futuras. Sua atitude salvará <u>vidas</u>. </h3>
     <div class="caixa-ajuda">
     <h2>Como nos ajudar?</h2>
-    <p class="descricao">É possível nos ajudar de diversas maneiras. Escolha aquela que pareça a melhor para você :)</p>
+    <p class="descricao">É possível nos ajudar de diversas maneiras. Escolha aquela que pareça a melhor para você.</p>
     
-    <div class="container2">
-   </div>
+    <div class="conteudo1-2">
+   
         <div class="container2">
             <div class="square">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPk-r2NRmghdeVBxfM7oUMuY89gQitzQOY1IcxJEpUoA&s" alt="Imagem 1">
+            <img src="https://img.nsctotal.com.br/wp-content/uploads/2022/10/Pessoa-digitando-no-celular_1.jpg" alt="Imagem de denúncia">
           <div class="overlay">
-            <a href="canal-de-denuncia.html"><p>Por meio do nosso "Canal de Denúncias" é possível denunciar ações que degradam o meio ambiente e a sustentabilidade</p></a>
+            <a href="canal-de-denuncia.html"><p>Por meio do nosso "Canal de Denúncias" é possível denunciar ações que degradam o meio ambiente e a sustentabilidade.</p></a>
           </div>
         </div>
         <div class="square">
-          <img src="../assets/como-ajudar-campanhas.png" alt="Imagem 2">
+          <img src="https://santarem.pa.gov.br/storage/posts/May2023/whatsapp-image-2023-05-31-at-151029-1-GJwx6V.jpg" alt="Imagem de campanhas">
           <div class="overlay">
-            <a href="canal-de-campanhas.html"><p>No nosso "Canal de Campanhas" divulgamos diversas campanhas que ajudam a reduzir a poluição, as quais você pode participar</p></a>
+            <a href="canal-de-campanhas.html"><p>No nosso "Canal de Campanhas" divulgamos diversas campanhas que ajudam a reduzir a poluição, as quais você pode participar.</p></a>
           </div>
         </div>
         <div class="square">
-            <img src="../assets/como-ajudar-pix.jpg" alt="Imagem 2">
+            <img src="https://observatorio3setor.org.br/wp-content/uploads/2019/02/doa%C3%A7%C3%A3o.jpg" alt="Imagem doação">
             <div class="overlay">
-              <a href="doacoes.html"><p>Somos um projeto sem fins lucrativos. Toda a sua doação será utilizada para melhorar Remsoma</p></a>
+              <a href="doacoes.html"><p>Somos um projeto sem fins lucrativos. Toda a sua doação será utilizada para melhorar Remsoma e reduzir a poluição em SP.</p></a>
             </div>
           </div>
           <div class="square">
-            <img src="https://media.istockphoto.com/id/1000935930/pt/vetorial/share-icon-vector-sign-and-symbol-isolated-on-white-background-share-logo-concept.jpg?s=612x612&w=0&k=20&c=SteidPsy2nlB63XgZll_UGhMFhQPuOFa6KlAeq2lgek=" alt="Imagem 2">
+            <img src="https://img.freepik.com/fotos-gratis/jovem-lindo-casal-homem-e-mulher-homem-espiando-e-espiando-o-celular-de-sua-namorada-sobre-uma-parede-branca_141793-61584.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1715126400&semt=ais" alt="Imagem divulgação">
             <div class="overlay">
-              <a href="#"><p>Através da sua divulgação, é possível que mais pessoas conheçam Remsoma e tomem o devido conhecimento sobre sustentabilidade</p></a>
+              <a id="botaoCopiar"><p>Através da sua divulgação, é possível que mais pessoas conheçam Remsoma e tomem o devido conhecimento sobre sustentabilidade.</p></a>
             </div>
           </div>
         <div class="square">
-          <img src="../assets/como-ajudar-conteudo.png" alt="Imagem 3">
+          <img src="https://www.conversion.com.br/wp-content/uploads/2021/10/leemblogthumb-1024x576.jpeg" alt="Imagem pessoa vendo o site Remsoma">
           <div class="overlay">
-            <a href="blog.html"><p> Inscreva-se e acompanhe as novidades e notícias. Tome atitudes e mude a realidade atual</p></a>
+            <a href="blog.html"><p> Inscreva-se e acompanhe as novidades e notícias. Tome atitudes e mude a realidade atual.</p></a>
                  </div>
         </div>
         
@@ -164,16 +191,57 @@ footer{margin-top: 5vw;}
         <h2 class="titulo-ajuda">Denuncie</h2>
         <h2 class="titulo-ajuda">Participe de Campanhas</h2>
         <h2 class="titulo-ajuda">Doe</h2>
-        <h2 class="titulo-ajuda">Divulgue</h2>
+        <h2 class="titulo-ajuda" >Divulgue</h2>
         <h2 class="titulo-ajuda">Absorva o conteúdo informativo</h2></div>
-
         <div class="container2">
-    
-      
-
+</div>
 
 </div>
 </div>
+
+
+
+<div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+<!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../scroll-suave.js"></script>
+<!-- script para descer ou subir com o nav-->
+<script>
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+      // Descendo
+      navbar.classList.add('hidden');
+  } else {
+      // Subindo
+      navbar.classList.remove('hidden');
+  }
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar o caso de rolar até o topo
+});
+</script>  <script src="../mobile-navbar.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <footer>   
@@ -190,7 +258,7 @@ footer{margin-top: 5vw;}
 
       </div>
       <div class="coluna-paginas" >
-          <h3><a href="index.html">A Remsoma</a></h3>
+          <h3><a href="../index.html">A Remsoma</a></h3>
           <hr class="hr-footer">
 
           <h3>Entenda nossos objetivos</h3>
@@ -200,7 +268,7 @@ footer{margin-top: 5vw;}
 
           </ul>
           <hr class="hr-footer">
-          <h3>Como nos ajudar</h3>
+          <a href="como-ajudar.html"><h3>Como nos ajudar</h3> </a>
           <ul>
               <li><a href="canal-de-denuncia.html">Canal de Denúncia</a></li>
               <li><a href="canal-de-campanhas.html">Campanhas</a></li>
@@ -251,127 +319,31 @@ footer{margin-top: 5vw;}
 
 </footer>
 
-<div id="result"></div>
-</div>
+<script> document.addEventListener('DOMContentLoaded', function() {
+  // Adicionar evento ao botão
+  document.getElementById('botaoCopiar').addEventListener('click', function() {
+      // Define o link a ser copiado
+      const linkParaCopiar = 'https://remsoma.github.io/';
 
-<script src="script.js"></script>
+      // Cria um elemento de texto temporário
+      const elementoTemporario = document.createElement('textarea');
+      elementoTemporario.value = linkParaCopiar;
+      document.body.appendChild(elementoTemporario);
 
-<!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
-<!-- script para descer ou subir lentamente toda a página web ao interagir com hyperlinks na mesma página-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="../scroll-suave.js"></script>
-<!-- script para descer ou subir com o nav-->
-<script>
-let lastScrollTop = 0;
-const navbar = document.getElementById('navbar');
+      // Seleciona o texto no elemento temporário
+      elementoTemporario.select();
+      elementoTemporario.setSelectionRange(0, 99999); // Para dispositivos móveis
 
-window.addEventListener('scroll', function() {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      // Copia o texto para a área de transferência
+      document.execCommand('copy');
 
-  if (scrollTop > lastScrollTop) {
-      // Descendo
-      navbar.classList.add('hidden');
-  } else {
-      // Subindo
-      navbar.classList.remove('hidden');
-  }
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar o caso de rolar até o topo
-});
-</script>
+      // Remove o elemento temporário
+      document.body.removeChild(elementoTemporario);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>   
-
-    <div class="container-footer"> 
-        <div class="coluna-logo">
-            <img src="../assets/nome-com-logo.png" class="img-footer" alt="Remsoma"/>
-            <p>Somos uma equipe apaixonada por proteger o meio ambiente e inspirar ação contra os diversos tipos de poluição que ameaçam São Paulo.</p>
-            <hr class="hr-footer">
-            <p class="share-text-footer">Compartilhe o nosso projeto</p>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Remsoma&title=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la." target="_blank"><img src="../assets/linkedin-logo-footer.png" class="img-share-footer"></a>
-            <a href="https://twitter.com/intent/tweet?text=Conheça%20Remsoma%3A%20um%20projeto%20que%20objetiva%20tornar%20a%20cidade%20de%20São%20Paulo%20mais%20sustentável%2C%20promovendo%20a%20redução%20da%20poluição%20através%20da%20oferta%20de%20conteúdos%20informativos%20sobre%20seu%20impacto%20e%20meios%20de%20contorná-la.&url=https://github.com/Remsoma" target="_blank"><img src="../assets/x-logo-footer.png" class="img-share-footer"></a>
-            <a href="https://github.com/Remsoma" target="_blank"><img src="../assets/github-logo-footer.png" class="img-share-footer"></a>
-
-        </div>
-        <div class="coluna-paginas" >
-            <h3><a href="index.html">A Remsoma</a></h3>
-            <hr class="hr-footer">
-
-            <h3>Entenda nossos objetivos</h3>
-            <ul>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Impacto da Poluição</a></li>
-
-            </ul>
-            <hr class="hr-footer">
-            <h3>Como nos ajudar</h3>
-            <ul>
-                <li><a href="#">Canal de Denúncia</a></li>
-                <li><a href="#">Campanhas</a></li>
-                <li><a href="#">Doações</a></li>
-            </ul>
-            <hr class="hr-footer">
-            <h3>Atente-se às novidades e informações</h3>
-            <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Inscreva-se</a></li>
-            </ul>
-            <hr class="hr-footer">
-
-
-
-        </div>
-        <div class="coluna-contato">
-            <div class="container-contato">
-                <h2>Entre em Contato</h2>
-                <form  action="#" method="post">
-                    <label for="nome">Nome:</label>
-                    <input class="input-footer" type="text" id="nome" name="nome" required>
-            
-                    <label for="email">E-mail:</label>
-                    <input class="input-footer" type="email" id="email" name="email" required>
-            
-                    <label for="assunto">Assunto:</label>
-                    <select class="input-footer" id="assunto" name="assunto" required>
-                        <option value="" disabled selected hidden>Selecione uma opção</option>
-                        <option value="doação">Doação</option>
-                        <option value="vendas">Vendas</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="voluntariado">Voluntariado</option>
-                        <option value="outro">Outro</option>
-                    </select>
-            
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea class="input-footer" id="mensagem"  name="mensagem" required></textarea>
-            
-                    <input class="botao-footer" type="submit" value="Enviar">
-                </form>  <a id="contato"></a>
-            </div>
-        </div>
-    </div>
-    <div class="copyright-footer">
-        <p>Todos os direitos reservados &copy; 2024 Remsoma</p>
-    </div>
-
-</footer>
-
-<div id="result"></div>
-</div>
-
+      // Alerta o usuário (opcional)
+      alert('Link de Remsoma copiado para a área de transferência!');
+  });
+});</script>
 
 
 </body>
